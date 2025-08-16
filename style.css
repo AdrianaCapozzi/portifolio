@@ -1,153 +1,138 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
 /* Cabeçalho */
 header {
-    text-align: center;
-    padding: 2em 1em;
-    background-color: #f0f0f0;
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #f0f0f0;
 }
-
 header h1 {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 3em;
-    color: red;
-    margin-bottom: 0.5em;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3em;
+  color: red;
+  margin-bottom: 0.5em;
 }
-
 header p {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Seção de perfil */
+/* Perfil */
 .perfil {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2em 1em;
-    gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em;
+  gap: 2em;
 }
-
 .foto-container {
-    position: relative;
+  position: relative;
 }
-
-/* Foto redonda com borda vermelha */
 #minha-foto {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid red;
-    transition: transform 0.3s ease;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid red;
+  transition: transform 0.3s ease;
 }
 
-/* Coração pulsante */
-.coração {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    transform: rotate(45deg);
-    animation: pulse 1s infinite;
+/* Coração pixelado estilo Mario */
+.pixel-heart {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
 }
 
-.coração::before,
-.coração::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 50%;
-}
-
-.coração::before {
-    top: -15px;
-    left: 0;
-}
-
-.coração::after {
-    left: 15px;
-    top: 0;
+/* criando o coração com box-shadow */
+.pixel-heart {
+  box-shadow:
+    10px 0 0 red,
+    20px 0 0 red,
+    0 10px 0 red,
+    10px 10px 0 red,
+    20px 10px 0 red,
+    30px 10px 0 red,
+    10px 20px 0 red,
+    20px 20px 0 red,
+    10px 30px 0 red,
+    20px 30px 0 red;
+  animation: pulse 0.8s infinite;
 }
 
 @keyframes pulse {
-    0% { transform: rotate(45deg) scale(1); }
-    50% { transform: rotate(45deg) scale(1.2); }
-    100% { transform: rotate(45deg) scale(1); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
 
-/* Sobre mim */
+/* Sobre */
 .sobre {
-    max-width: 600px;
+  max-width: 600px;
 }
 
-/* Seção de projetos */
+/* Projetos */
 .projetos {
-    padding: 2em 1em;
+  padding: 2em 1em;
 }
-
 .projeto {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 8px;
 }
-
 .projeto h3 {
-    margin-top: 0;
-    color: #333;
+  margin-top: 0;
+  color: #333;
 }
-
 .projeto ul {
-    padding-left: 1.2em;
-    margin-bottom: 1em;
+  padding-left: 1.2em;
+  margin-bottom: 1em;
 }
-
+.projeto li {
+  margin-bottom: 0.5em;
+}
 .projeto a {
-    color: #0077cc;
-    text-decoration: none;
+  color: #0077cc;
+  text-decoration: none;
 }
-
 .projeto a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Seção de contato */
+/* Contato */
 .contato {
-    padding: 2em 1em;
-    background-color: #f0f0f0;
+  padding: 2em 1em;
+  background-color: #f0f0f0;
 }
-
 .contato a {
-    color: #0077cc;
-    text-decoration: none;
+  color: #0077cc;
+  text-decoration: none;
 }
-
 .contato a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #ddd;
+  text-align: center;
+  padding: 1em;
+  background-color: #ddd;
 }
