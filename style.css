@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5;
+    color: #330000;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #b30000;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.foto-container {
+    position: relative;
+}
+
+.foto-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.coração {
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    clip-path: path("M24 4.748C24-1.592 15.846-3.948 12 2.248 8.154-3.948 0-1.592 0 4.748 0 8.662 4.686 12.44 12 21c7.314-8.56 12-12.338 12-16.252z");
+    animation: pulsar 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.sobre, .projetos, .contato {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.projetos ul {
+    list-style: none;
+}
+
+.projetos ul li a {
+    text-decoration: none;
+    color: #b30000;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #b30000;
+    color: white;
+}
