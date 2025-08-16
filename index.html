@@ -5,109 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Adriana Capozzi</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-
-        header {
-            text-align: center;
-            padding: 2em 1em;
-            background-color: #f0f0f0;
-        }
-
-        header h1 {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 3em;
-            margin: 0.2em 0;
-        }
-
-        .perfil {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            padding: 2em 1em;
-            gap: 2em;
-        }
-
-        .foto-container {
-            position: relative;
-        }
-
-        #minha-foto {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid red;
-        }
-
-        .coração {
-            position: absolute;
-            bottom: 10px;
-            right: -20px;
-            width: 30px;
-            height: 30px;
-            background-color: red;
-            clip-path: polygon(50% 0%, 61% 16%, 75% 25%, 87% 39%, 94% 50%, 100% 64%, 97% 78%, 90% 88%, 79% 97%, 65% 100%, 50% 94%, 35% 100%, 21% 97%, 10% 88%, 3% 78%, 0% 64%, 6% 50%, 13% 39%, 25% 25%, 39% 16%);
-            animation: pulse 1s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-
-        .sobre {
-            max-width: 600px;
-        }
-
-        .projetos {
-            padding: 2em 1em;
-        }
-
-        .projeto {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 1.5em;
-            margin-bottom: 2em;
-            border-radius: 8px;
-        }
-
-        .projeto h3 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .projeto ul {
-            padding-left: 1.2em;
-        }
-
-        .projeto a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        .projeto a:hover {
-            text-decoration: underline;
-        }
-
-        .contato {
-            padding: 2em 1em;
-            background-color: #f0f0f0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #ddd;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -183,16 +80,5 @@
             <h2>Contato</h2>
             <p>Email: <a href="mailto:tatacapozzi@gmail.com">tatacapozzi@gmail.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/seuusuario" target="_blank">linkedin.com/in/seuusuario</a></p>
-            <p>GitHub: <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></p>
-        </section>
-    </main>
+            <p>GitHub:
 
-    <footer>
-        <p>© 2025 - Desenvolvido por Adriana Capozzi</p>
-    </footer>
-
-    <script>
-        function aumentarFoto() {
-            const foto = document.getElementById("minha-foto");
-            foto.style.transform = foto.style.transform === "scale(1.1)" ? "scale(1)" : "scale(1.1)";
-            foto.style.transition = "transform 0.3s ease";
