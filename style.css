@@ -5,96 +5,109 @@
     box-sizing: border-box;
 }
 
+/* Corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff5f5;
-    color: #330000;
-    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
 }
 
+/* Cabeçalho */
 header {
     text-align: center;
-    padding: 2rem;
-    background-color: #b30000;
-    color: white;
+    padding: 2em 1em;
+    background-color: #f0f0f0;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
+    color: red;
+    margin-bottom: 0.5em;
 }
 
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 2rem;
+header p {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* Seção de perfil */
 .perfil {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    justify-content: center;
+    padding: 2em 1em;
+    gap: 2em;
 }
 
 .foto-container {
     position: relative;
 }
 
-.foto-container img {
+/* Foto redonda com borda vermelha */
+#minha-foto {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid red;
+    transition: transform 0.3s ease;
 }
 
+/* Coração pulsante */
 .coração {
     position: absolute;
     bottom: 10px;
-    right: -20px;
+    left: 10px;
     width: 30px;
     height: 30px;
     background-color: red;
-    clip-path: path("M24 4.748C24-1.592 15.846-3.948 12 2.248 8.154-3.948 0-1.592 0 4.748 0 8.662 4.686 12.44 12 21c7.314-8.56 12-12.338 12-16.252z");
-    animation: pulsar 1s infinite;
-    cursor: pointer;
+    transform: rotate(45deg);
+    animation: pulse 1s infinite;
 }
 
-@keyframes pulsar {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+.coração::before,
+.coração::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
 }
 
-.sobre, .projetos, .contato {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+.coração::before {
+    top: -15px;
+    left: 0;
 }
 
-.projetos ul {
-    list-style: none;
+.coração::after {
+    left: 15px;
+    top: 0;
 }
 
-.projetos ul li a {
-    text-decoration: none;
-    color: #b30000;
+@keyframes pulse {
+    0% { transform: rotate(45deg) scale(1); }
+    50% { transform: rotate(45deg) scale(1.2); }
+    100% { transform: rotate(45deg) scale(1); }
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #b30000;
-    color: white;
+/* Sobre mim */
+.sobre {
+    max-width: 600px;
 }
+
+/* Seção de projetos */
+.projetos {
+    padding: 2em 1em;
+}
+
 .projeto {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     border-radius: 8px;
 }
 
@@ -105,6 +118,7 @@ footer {
 
 .projeto ul {
     padding-left: 1.2em;
+    margin-bottom: 1em;
 }
 
 .projeto a {
@@ -114,4 +128,26 @@ footer {
 
 .projeto a:hover {
     text-decoration: underline;
+}
+
+/* Seção de contato */
+.contato {
+    padding: 2em 1em;
+    background-color: #f0f0f0;
+}
+
+.contato a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #ddd;
 }
