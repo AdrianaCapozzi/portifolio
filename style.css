@@ -90,3 +90,28 @@ footer {
     background-color: #b30000;
     color: white;
 }
+.projeto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+}
+
+.projeto h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.projeto ul {
+    padding-left: 1.2em;
+}
+
+.projeto a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
