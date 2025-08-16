@@ -5,6 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Adriana Capozzi</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 2em 1em;
+            background-color: #f0f0f0;
+        }
+
+        header h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+            margin: 0.2em 0;
+        }
+
+        .perfil {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 2em 1em;
+            gap: 2em;
+        }
+
+        .foto-container {
+            position: relative;
+        }
+
+        #minha-foto {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid red;
+        }
+
+        .coração {
+            position: absolute;
+            bottom: 10px;
+            right: -20px;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 61% 16%, 75% 25%, 87% 39%, 94% 50%, 100% 64%, 97% 78%, 90% 88%, 79% 97%, 65% 100%, 50% 94%, 35% 100%, 21% 97%, 10% 88%, 3% 78%, 0% 64%, 6% 50%, 13% 39%, 25% 25%, 39% 16%);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .sobre {
+            max-width: 600px;
+        }
+
+        .projetos {
+            padding: 2em 1em;
+        }
+
+        .projeto {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1.5em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+        }
+
+        .projeto h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .projeto ul {
+            padding-left: 1.2em;
+        }
+
+        .projeto a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .projeto a:hover {
+            text-decoration: underline;
+        }
+
+        .contato {
+            padding: 2em 1em;
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,58 +116,68 @@
     </header>
 
     <main>
-        <<section class="projetos">
-    <h2>Meus Projetos</h2>
+        <section class="perfil">
+            <div class="foto-container">
+                <img id="minha-foto" src="minha-foto.jpg" alt="Foto de Adriana">
+                <div class="coração" onclick="aumentarFoto()"></div>
+            </div>
+            <div class="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Em 2022 decidi...</p>
+            </div>
+        </section>
 
-    <article class="projeto">
-        <h3>Portal da Zeladoria - Análise de Dados e CI</h3>
-        <p><strong>Período:</strong> Fevereiro 2025 - Junho 2025</p>
-        <p>Desenvolvimento de solução web com foco em coleta, modelagem e visualização de dados para apoio à gestão pública. Implementação de CI/CD com GitHub Actions e criação de dashboards com Power BI.</p>
-        <p><strong>Tecnologias:</strong> Python, Flask, MySQL, GitHub Actions, HTML/CSS/JS</p>
-        <p><strong>Destaques:</strong></p>
-        <ul>
-            <li>Elaboração do relatório técnico</li>
-            <li>SCRUM master</li>
-            <li>Implementação de Integração Contínua</li>
-            <li>Criação de base de dados para Power BI</li>
-            <li>Configuração de pipeline de desenvolvimento</li>
-            <li>Liderança na comunicação com stakeholders</li>
-        </ul>
-        <p><a href="https://youtu.be/M72Qb6XuZE0?si=2HpAdHD7_fWKguNj" target="_blank">📺 Ver vídeo do projeto</a></p>
-    </article>
+        <section class="projetos">
+            <h2>Meus Projetos</h2>
 
-    <article class="projeto">
-        <h3>Conecta São Vicente - Portal da Zeladoria</h3>
-        <p><strong>Período:</strong> Julho 2024 - Novembro 2024</p>
-        <p>Protótipo de um software web para o setor de agendamento de serviços de zeladoria urbana da prefeitura de São Vicente. Responsável pela construção dos dashboards e comunicação com a comunidade utilizando SCRUM.</p>
-        <p><strong>Tecnologias:</strong> Python, Flask, Google Sheets, HTML/CSS/JS</p>
-        <p><strong>Destaques:</strong></p>
-        <ul>
-            <li>Elaboração do relatório técnico</li>
-            <li>SCRUM master</li>
-            <li>Criação de base de dados no Google Sheets</li>
-            <li>Interface de gráficos com JS Charts</li>
-            <li>Liderança na comunicação com stakeholders</li>
-        </ul>
-        <p><a href="https://youtu.be/NVHUTLvehrw?si=ZfuGrl4bgor8IiHI" target="_blank">📺 Ver vídeo do projeto</a></p>
-    </article>
+            <article class="projeto">
+                <h3>Portal da Zeladoria - Análise de Dados e CI</h3>
+                <p><strong>Período:</strong> Fevereiro 2025 - Junho 2025</p>
+                <p>Desenvolvimento de solução web com foco em coleta, modelagem e visualização de dados para apoio à gestão pública. Implementação de CI/CD com GitHub Actions e criação de dashboards com Power BI.</p>
+                <p><strong>Tecnologias:</strong> Python, Flask, MySQL, GitHub Actions, HTML/CSS/JS</p>
+                <p><strong>Destaques:</strong></p>
+                <ul>
+                    <li>Elaboração do relatório técnico</li>
+                    <li>SCRUM master</li>
+                    <li>Implementação de Integração Contínua</li>
+                    <li>Criação de base de dados para Power BI</li>
+                    <li>Configuração de pipeline de desenvolvimento</li>
+                    <li>Liderança na comunicação com stakeholders</li>
+                </ul>
+                <p><a href="https://youtu.be/M72Qb6XuZE0?si=2HpAdHD7_fWKguNj" target="_blank">📺 Ver vídeo do projeto</a></p>
+            </article>
 
-    <article class="projeto">
-        <h3>Sistema ERP para Pequenos Produtores Rurais</h3>
-        <p><strong>Período:</strong> Fevereiro - Maio 2024</p>
-        <p>Desenvolvimento do front-end e auxílio na construção do banco de dados. Contribuição com documentação, pesquisa e mediação entre equipe e comunidade.</p>
-        <p><strong>Tecnologias:</strong> JavaScript, SQLite, Git, GitHub</p>
-        <p><strong>Destaques:</strong></p>
-        <ul>
-            <li>Desenvolvimento da interface e CRUDs</li>
-            <li>Gestão do banco de dados</li>
-            <li>Documentação técnica</li>
-            <li>Liderança na comunicação com stakeholders</li>
-        </ul>
-        <p><a href="https://youtu.be/cQEA7apmT9Q?si=R2wbCLHpPyVj8Loy" target="_blank">📺 Ver vídeo do projeto</a></p>
-    </article>
-</section>
+            <article class="projeto">
+                <h3>Conecta São Vicente - Portal da Zeladoria</h3>
+                <p><strong>Período:</strong> Julho 2024 - Novembro 2024</p>
+                <p>Protótipo de um software web para o setor de agendamento de serviços de zeladoria urbana da prefeitura de São Vicente. Responsável pela construção dos dashboards e comunicação com a comunidade utilizando SCRUM.</p>
+                <p><strong>Tecnologias:</strong> Python, Flask, Google Sheets, HTML/CSS/JS</p>
+                <p><strong>Destaques:</strong></p>
+                <ul>
+                    <li>Elaboração do relatório técnico</li>
+                    <li>SCRUM master</li>
+                    <li>Criação de base de dados no Google Sheets</li>
+                    <li>Interface de gráficos com JS Charts</li>
+                    <li>Liderança na comunicação com stakeholders</li>
+                </ul>
+                <p><a href="https://youtu.be/NVHUTLvehrw?si=ZfuGrl4bgor8IiHI" target="_blank">📺 Ver vídeo do projeto</a></p>
+            </article>
 
+            <article class="projeto">
+                <h3>Sistema ERP para Pequenos Produtores Rurais</h3>
+                <p><strong>Período:</strong> Fevereiro - Maio 2024</p>
+                <p>Desenvolvimento do front-end e auxílio na construção do banco de dados. Contribuição com documentação, pesquisa e mediação entre equipe e comunidade.</p>
+                <p><strong>Tecnologias:</strong> JavaScript, SQLite, Git, GitHub</p>
+                <p><strong>Destaques:</strong></p>
+                <ul>
+                    <li>Desenvolvimento da interface e CRUDs</li>
+                    <li>Gestão do banco de dados</li>
+                    <li>Documentação técnica</li>
+                    <li>Liderança na comunicação com stakeholders</li>
+                </ul>
+                <p><a href="https://youtu.be/cQEA7apmT9Q?si=R2wbCLHpPyVj8Loy" target="_blank">📺 Ver vídeo do projeto</a></p>
+            </article>
+        </section>
 
         <section class="contato">
             <h2>Contato</h2>
@@ -78,6 +191,8 @@
         <p>© 2025 - Desenvolvido por Adriana Capozzi</p>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <script>
+        function aumentarFoto() {
+            const foto = document.getElementById("minha-foto");
+            foto.style.transform = foto.style.transform === "scale(1.1)" ? "scale(1)" : "scale(1.1)";
+            foto.style.transition = "transform 0.3s ease";
