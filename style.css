@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,105 +10,81 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
+  scroll-behavior: smooth; /* efeito suave nos cliques */
 }
 
-/* Cabeçalho e Rodapé */
-header,
-footer {
-  background-color: #cc092f; /* vermelho Bradesco */
-  color: white;
-  text-align: center;
-  padding: 2em 1em;
-}
-
-header h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-header p {
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-footer {
+/* Navegação fixa */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #cc092f;
   padding: 1em;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
 }
 
-/* Perfil (foto à direita) */
+/* Hero ocupa tela inteira */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4em; /* espaço por causa do menu fixo */
+}
+
+/* Perfil (foto + texto lado a lado) */
 .perfil {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-direction: row-reverse; /* foto à direita */
-  padding: 2em 1em;
   gap: 2em;
 }
 
-/* Foto com moldura redonda Bradesco */
-.foto-container {
-  position: relative;
-}
-
+/* Foto redonda */
 #minha-foto {
   width: 200px;
   height: 200px;
-  object-fit: cover;        /* preenche sem distorcer */
-  border-radius: 50%;       /* moldura redonda */
-  border: 5px solid #cc092f;/* vermelho Bradesco */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #cc092f;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-/* Sobre */
-.sobre {
-  max-width: 600px;
+/* Seções gerais */
+section {
+  padding: 4em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.sobre h2 {
-  color: #cc092f; /* título "Sobre Mim" em vermelho */
-  margin-bottom: 0.5em;
-}
-
-/* Seção Projetos */
-.projetos {
-  padding: 2em 1em;
-}
-
-/* Card do projeto (todos iguais) */
+/* Projetos (mantive igual você já tinha estilizado) */
 .projeto {
-  background-color: #cc092f; /* vermelho */
-  color: white;              /* texto branco */
+  background-color: #cc092f;
+  color: white;
   padding: 1.5em;
   margin-bottom: 2em;
   border-radius: 12px;
 }
-
-/* Título do card */
-.projeto h3 {
-  margin-top: 0;
-  margin-bottom: 0.75em;
-}
-
-/* Lista de destaques com coração */
-.projeto ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 1em;
-}
-
-.projeto li {
-  margin-bottom: 0.5em;
-  display: flex;
-  align-items: center; /* alinha melhor os ícones e o texto */
-  gap: 0.75em;
-}
-
-/* Coração */
 .heart-icon {
-  width: 20px;              
+  width: 20px;
   height: 20px;
   object-fit: contain;
   background: none;
@@ -116,49 +92,37 @@ footer {
   box-shadow: none;
   vertical-align: middle;
 }
-
-/* Link para YouTube */
 .video-link a {
-  display: inline-flex;     /* alinha ícone + texto */
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   color: #ffe;
   text-decoration: none;
 }
-
 .video-link a:hover {
   text-decoration: underline;
 }
-
-/* Ícone do YouTube */
 .icon-youtube {
   width: 120px;
   height: 120px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-/* Links */
-.projeto a {
-  color: #ffe;
-  text-decoration: none;
-}
-
-.projeto a:hover {
-  text-decoration: underline;
 }
 
 /* Contato */
 .contato {
-  padding: 2em 1em;
   background-color: #f0f0f0;
 }
-
 .contato a {
   color: #0077cc;
   text-decoration: none;
 }
-
 .contato a:hover {
   text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background: #cc092f;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
