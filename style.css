@@ -53,33 +53,6 @@ footer {
   transition: transform 0.3s ease;
 }
 
-/* Coração pixel art estilo Mario */
-.pixel-heart {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  box-shadow:
-    10px 0 0 #cc092f,
-    20px 0 0 #cc092f,
-    0 10px 0 #cc092f,
-    10px 10px 0 #cc092f,
-    20px 10px 0 #cc092f,
-    30px 10px 0 #cc092f,
-    10px 20px 0 #cc092f,
-    20px 20px 0 #cc092f,
-    10px 30px 0 #cc092f,
-    20px 30px 0 #cc092f;
-  animation: pulse 0.8s infinite;
-}
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
-}
-
 /* Sobre */
 .sobre {
   max-width: 600px;
