@@ -75,7 +75,7 @@ section {
   margin: 0 auto;
 }
 
-/* Projetos (mantive igual você já tinha estilizado) */
+/* Projetos */
 .projeto {
   background-color: #cc092f;
   color: white;
@@ -84,8 +84,8 @@ section {
   border-radius: 12px;
 }
 .heart-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   background: none;
   border: none;
@@ -149,3 +149,32 @@ footer {
 
 .contato a:hover {
   color: #ffd700; 
+
+  /* Retirar bolinhas da lista e deixar só os corações */
+.lista-destaques {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-destaques li {
+  margin-bottom: 6px;
+}
+
+/* Ícone coração menorzinho e alinhado */
+.heart-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Ajustes do título e texto de introdução */
+.projetos h2 {
+  margin-bottom: 10px; /* menos espaço */
+}
+
+.intro-projetos {
+  margin-top: 0;
+  margin-bottom: 20px; /* espaço entre o texto e a primeira caixa */
+  font-weight: normal;
+}
