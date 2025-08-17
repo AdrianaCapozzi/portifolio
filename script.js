@@ -5,3 +5,4 @@ function aumentarFoto() {
 }
 
 document.getElementById('minha-foto').addEventListener('click', aumentarFoto);
+
