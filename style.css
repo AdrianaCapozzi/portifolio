@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #cc092f;
+  background: #cc092f; /* vermelho Bradesco */
   padding: 1em;
   z-index: 1000;
 }
@@ -77,7 +77,7 @@ section {
 
 /* Projetos */
 .projeto {
-  background-color: #cc092f;
+  background-color: #cc092f; /* vermelho Bradesco */
   color: white;
   padding: 1.5em;
   margin-bottom: 2em;
@@ -107,25 +107,59 @@ section {
   height: 120px;
 }
 
-/* Contato */
-.contato {
-  background-color: #f0f0f0;
+/* Retirar bolinhas da lista e deixar só os corações */
+.lista-destaques {
+  list-style: none;
+  padding-left: 0;
 }
-.contato a {
-  color: #0077cc;
-  text-decoration: none;
-}
-.contato a:hover {
-  text-decoration: underline;
+.lista-destaques li {
+  margin-bottom: 6px;
 }
 
-/* Rodapé */
-footer {
-  background: #cc092f;
-  color: white;
-  text-align: center;
-  padding: 1em;
+/* Ajustes do título e texto de introdução */
+.projetos h2 {
+  margin-bottom: 10px; /* menos espaço */
 }
+.intro-projetos {
+  margin-top: 0;
+  margin-bottom: 20px; /* espaço entre o texto e a primeira caixa */
+  font-weight: normal;
+}
+
+/* Voluntariado */
+.voluntariado {
+  margin-top: 40px;
+  padding: 20px;
+}
+.voluntariado h2 {
+  color: #b30000; /* vermelho Bradesco */
+  margin-bottom: 15px;
+}
+.faixa-vermelha {
+  background-color: #b30000; /* vermelho Bradesco */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.links-youtube a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+.links-youtube a:hover {
+  text-decoration: underline;
+}
+.youtube-logo {
+  width: 24px;
+  height: auto;
+  margin-right: 8px;
+}
+
+/* Contato */
 .contato {
   background-color: #cc092f; 
   color: white;
@@ -135,38 +169,23 @@ footer {
   margin: 30px auto;
   max-width: 600px;
 }
-
 .contato h2 {
   margin-bottom: 15px;
   font-size: 24px;
 }
-
 .contato a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: underline;
 }
-
 .contato a:hover {
   color: #ffd700; 
-
-  /* Retirar bolinhas da lista e deixar só os corações */
-.lista-destaques {
-  list-style: none;
-  padding-left: 0;
 }
 
-.lista-destaques li {
-  margin-bottom: 6px;
-}
-
-/* Ajustes do título e texto de introdução */
-.projetos h2 {
-  margin-bottom: 10px; /* menos espaço */
-}
-
-.intro-projetos {
-  margin-top: 0;
-  margin-bottom: 20px; /* espaço entre o texto e a primeira caixa */
-  font-weight: normal;
+/* Rodapé */
+footer {
+  background: #cc092f;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
