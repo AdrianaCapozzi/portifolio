@@ -59,8 +59,8 @@ body {
 
 /* Foto redonda */
 #minha-foto {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #cc092f;
@@ -158,14 +158,6 @@ footer {
 
 .lista-destaques li {
   margin-bottom: 6px;
-}
-
-/* Ícone coração menorzinho e alinhado */
-.heart-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
-  vertical-align: middle;
 }
 
 /* Ajustes do título e texto de introdução */
