@@ -129,3 +129,10 @@ footer {
 .contato a:hover {
   text-decoration: underline;
 }
+
+.icon-youtube {
+  width: 20px;       
+  height: 20px;
+  vertical-align: middle; 
+  margin-right: 5px;       
+}
