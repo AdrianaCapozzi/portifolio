@@ -27,24 +27,27 @@ header h1 {
 }
 
 header p {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 footer {
   padding: 1em;
 }
 
-/* Perfil */
+/* Perfil (foto à direita) */
 .perfil {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse; /* foto à direita */
   padding: 2em 1em;
   gap: 2em;
 }
 
+/* Foto com moldura redonda Bradesco */
 .foto-container {
   position: relative;
 }
@@ -52,13 +55,11 @@ footer {
 #minha-foto {
   width: 200px;
   height: 200px;
-  object-fit: cover;
-  border-radius: 50%; 
-  border: 5px solid #cc092f;
+  object-fit: cover;        /* preenche sem distorcer */
+  border-radius: 50%;       /* moldura redonda */
+  border: 5px solid #cc092f;/* vermelho Bradesco */
   transition: transform 0.3s ease;
   cursor: pointer;
-}
-
 }
 
 /* Sobre */
@@ -67,27 +68,31 @@ footer {
 }
 
 .sobre h2 {
-  color: #cc092f; /* vermelho no título Sobre Mim */
+  color: #cc092f; /* título "Sobre Mim" em vermelho */
   margin-bottom: 0.5em;
 }
 
-/* Projetos */
+/* Seção Projetos */
 .projetos {
   padding: 2em 1em;
 }
 
+/* Card do projeto (todos iguais) */
 .projeto {
   background-color: #cc092f; /* vermelho */
-  color: white;              /* fonte branca */
+  color: white;              /* texto branco */
   padding: 1.5em;
   margin-bottom: 2em;
   border-radius: 12px;
 }
 
+/* Título do card */
 .projeto h3 {
   margin-top: 0;
+  margin-bottom: 0.75em;
 }
 
+/* Lista de destaques com coração */
 .projeto ul {
   list-style: none;
   padding-left: 0;
@@ -97,15 +102,43 @@ footer {
 .projeto li {
   margin-bottom: 0.5em;
   display: flex;
+  align-items: center; /* alinha melhor os ícones e o texto */
+  gap: 0.75em;
+}
+
+/* Coração 2x maior e bem alinhado */
+.heart-icon {
+  width: 36px;              /* 2x o tamanho anterior (18px → 36px) */
+  height: 36px;
+  object-fit: contain;
+  background: none;
+  border: none;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+/* Link para YouTube */
+.video-link a {
+  display: inline-flex;     /* alinha ícone + texto */
   align-items: center;
-  gap: 0.5em;
+  gap: 12px;
+  color: #ffe;
+  text-decoration: none;
 }
 
-.projeto li img {
-  width: 18px;
-  height: 18px;
+.video-link a:hover {
+  text-decoration: underline;
 }
 
+/* Ícone do YouTube 6x maior (20px → 120px) */
+.icon-youtube {
+  width: 120px;
+  height: 120px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Links gerais dentro do card (se houver) */
 .projeto a {
   color: #ffe;
   text-decoration: none;
@@ -128,11 +161,4 @@ footer {
 
 .contato a:hover {
   text-decoration: underline;
-}
-
-.icon-youtube {
-  width: 20px;       
-  height: 20px;
-  vertical-align: middle; 
-  margin-right: 5px;       
 }
