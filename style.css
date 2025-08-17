@@ -75,7 +75,6 @@ section {
   margin: 0 auto;
 }
 
-/* Projetos */
 .projeto {
   background-color: #c4170c; /* vermelho Bradesco */
   color: white;
@@ -123,7 +122,6 @@ section {
   font-weight: normal;
 }
 
-/* Voluntariado */
 .voluntariado {
   margin-top: 40px;
   padding: 20px;
@@ -151,10 +149,10 @@ section {
   margin-bottom: 15px;
 }
 
-/* Ícone troféu (formação) */
+/* Ícone troféu */
 .icone-trofeu {
-  width: 20px;  /* tamanho do coraçãozinho */
-  height: 20px;
+  width: 36px;  
+  height:36px;
   vertical-align: middle;
   margin-left: 5px;
 }
