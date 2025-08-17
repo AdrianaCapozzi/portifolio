@@ -114,8 +114,8 @@ section {
 
 /* Ajustes do título e texto de introdução */
 .projetos h2 {
-  margin-bottom: 10px; /* menos espaço */
-}
+  margin-bottom: 10px; 
+
 .intro-projetos {
   margin-top: 0;
   margin-bottom: 20px; /* espaço entre o texto e a primeira caixa */
@@ -127,13 +127,13 @@ section {
   padding: 20px;
 }
 .voluntariado h2 {
-  color: #c4170c; /* vermelho Bradesco */
+  color: #c4170c; 
   margin-bottom: 15px;
 }
 
 /* Faixa vermelha (usada em experiência, formação, voluntariado etc.) */
 .faixa-vermelha {
-  background-color: #c4170c; /* vermelho Bradesco */
+  background-color: #c4170c; 
   color: white;
   padding: 20px;
   border-radius: 10px;
