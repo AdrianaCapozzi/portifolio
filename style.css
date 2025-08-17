@@ -5,28 +5,31 @@
   box-sizing: border-box;
 }
 
-/* Body */
+/* Corpo */
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
 }
 
-/* Cabeçalho */
-header {
+/* Cabeçalho e Rodapé com cor Bradesco */
+header, footer {
+  background-color: #cc092f;
+  color: white;
   text-align: center;
   padding: 2em 1em;
-  background-color: #f0f0f0;
 }
 header h1 {
-  font-family: 'Brush Script MT', cursive;
   font-size: 3em;
-  color: red;
+  font-family: Arial, sans-serif;
   margin-bottom: 0.5em;
 }
 header p {
   max-width: 800px;
   margin: 0 auto;
+}
+footer {
+  padding: 1em;
 }
 
 /* Perfil */
@@ -46,11 +49,11 @@ header p {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid red;
+  border: 5px solid #cc092f;
   transition: transform 0.3s ease;
 }
 
-/* Coração pixelado estilo Mario */
+/* Coração pixel art estilo Mario */
 .pixel-heart {
   position: absolute;
   bottom: 10px;
@@ -58,24 +61,19 @@ header p {
   width: 10px;
   height: 10px;
   background-color: transparent;
-}
-
-/* criando o coração com box-shadow */
-.pixel-heart {
   box-shadow:
-    10px 0 0 red,
-    20px 0 0 red,
-    0 10px 0 red,
-    10px 10px 0 red,
-    20px 10px 0 red,
-    30px 10px 0 red,
-    10px 20px 0 red,
-    20px 20px 0 red,
-    10px 30px 0 red,
-    20px 30px 0 red;
+    10px 0 0 #cc092f,
+    20px 0 0 #cc092f,
+    0 10px 0 #cc092f,
+    10px 10px 0 #cc092f,
+    20px 10px 0 #cc092f,
+    30px 10px 0 #cc092f,
+    10px 20px 0 #cc092f,
+    20px 20px 0 #cc092f,
+    10px 30px 0 #cc092f,
+    20px 30px 0 #cc092f;
   animation: pulse 0.8s infinite;
 }
-
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.2); }
@@ -103,7 +101,8 @@ header p {
   color: #333;
 }
 .projeto ul {
-  padding-left: 1.2em;
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 1em;
 }
 .projeto li {
@@ -128,11 +127,4 @@ header p {
 }
 .contato a:hover {
   text-decoration: underline;
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #ddd;
 }
