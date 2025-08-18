@@ -23,6 +23,7 @@ body {
   padding: 1em;
   z-index: 1000;
 }
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -30,11 +31,13 @@ body {
   flex-wrap: wrap;
   gap: 1.5em;
 }
+
 .navbar a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
+
 .navbar a:hover {
   text-decoration: underline;
 }
@@ -68,6 +71,15 @@ body {
   cursor: pointer;
 }
 
+/* Caixa vermelha do nome + descrição */
+.sobre {
+  background-color: #c4170c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
 /* Seções gerais */
 section {
   padding: 4em 2em;
@@ -82,12 +94,14 @@ section {
   margin-bottom: 2em;
   border-radius: 12px;
 }
+
 .heart-icon {
   width: 35px;
   height: 35px;
   object-fit: contain;
   vertical-align: middle;
 }
+
 .video-link a {
   display: inline-flex;
   align-items: center;
@@ -95,9 +109,11 @@ section {
   color: #ffe;
   text-decoration: none;
 }
+
 .video-link a:hover {
   text-decoration: underline;
 }
+
 .icon-youtube {
   width: 220px;
   height: 120px;
@@ -108,17 +124,19 @@ section {
   list-style: none;
   padding-left: 0;
 }
+
 .lista-destaques li {
   margin-bottom: 6px;
 }
 
 /* Ajustes do título e texto de introdução */
 .projetos h2 {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+}
 
 .intro-projetos {
   margin-top: 0;
-  margin-bottom: 20px; /* espaço entre o texto e a primeira caixa */
+  margin-bottom: 20px;
   font-weight: normal;
 }
 
@@ -126,35 +144,41 @@ section {
   margin-top: 40px;
   padding: 20px;
 }
+
 .voluntariado h2 {
-  color: #c4170c; 
+  color: #c4170c;
   margin-bottom: 15px;
 }
 
 /* Faixa vermelha (usada em experiência, formação, voluntariado etc.) */
 .faixa-vermelha {
-  background-color: #c4170c; 
+  background-color: #c4170c;
   color: white;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
 }
+
 .faixa-vermelha h2 {
   color: white;
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
   margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
-.experiencia-item, #formacao p {
+
+.experiencia-item,
+#formacao p {
   margin-bottom: 15px;
 }
 
-/* Ícone troféu */
+/* Ícones ao lado do título */
 .icone-trofeu {
-  width: 70px;  
-  height:50px;
+  width: 30px;
+  height: 30px;
   vertical-align: middle;
-  margin-left: 5px;
 }
 
 /* Links YouTube */
@@ -165,9 +189,11 @@ section {
   color: inherit;
   margin-bottom: 10px;
 }
+
 .links-youtube a:hover {
   text-decoration: underline;
 }
+
 .youtube-logo {
   width: 24px;
   height: auto;
@@ -176,25 +202,28 @@ section {
 
 /* Contato */
 .contato {
-  background-color: #c4170c; 
+  background-color: #c4170c;
   color: white;
   padding: 20px;
-  border-radius: 10px;  
+  border-radius: 10px;
   text-align: center;
   margin: 30px auto;
   max-width: 600px;
 }
+
 .contato h2 {
   margin-bottom: 15px;
   font-size: 24px;
 }
+
 .contato a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: underline;
 }
+
 .contato a:hover {
-  color: #ffd700; 
+  color: #ffd700;
 }
 
 /* Rodapé */
