@@ -264,26 +264,26 @@ footer {
   font-size: 1.8em;
 }
 
-/* Ícone do Troféu → proporcional à linha (um pouco mais largo) */
+/* Ícone do Troféu */
 .icone-trofeu {
-  height: 1em;  /* altura proporcional ao texto */
-  width: auto;  /* largura ajusta automaticamente */
+  height: 70;  
+  width: 70;  
   margin-left: 8px; /* espaço da frase */
   vertical-align: middle;
 }
 
-/* Ícone Loading → um pouco maior que a altura da linha */
+/* Ícone Loading */
 .icone-loading {
-  height: 1.4em; /* maior que o texto */
-  width: auto;
+  height: 45;
+  width: 45;
   margin-left: 8px;
   vertical-align: middle;
 }
 
-/* Ícone Pause → quadrado com mesma altura e largura */
+/* Ícone Pause */
 .icone-pause {
-  height: 1em;
-  width: 1em; /* igual altura = quadrado */
+  height: 45;
+  width: 45; /* igual altura = quadrado */
   margin-left: 8px;
   vertical-align: middle;
 }
