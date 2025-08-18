@@ -287,3 +287,26 @@ footer {
   margin-left: 8px;
   vertical-align: middle;
 }
+/* Ícone do Troféu → tamanho de marcador */
+.icone-trofeu {
+  height: 1em;  /* altura do texto */
+  width: auto;  /* largura proporcional */
+  margin-left: 4px; /* pequeno espaço do texto */
+  vertical-align: middle;
+}
+
+/* Ícone Loading → tamanho de marcador */
+.icone-loading {
+  height: 1em;  
+  width: auto;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* Ícone Pause → tamanho de marcador */
+.icone-pause {
+  height: 1em;  
+  width: 1em; /* quadrado */
+  margin-left: 4px;
+  vertical-align: middle;
+}
