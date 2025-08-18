@@ -266,24 +266,24 @@ footer {
 
 /* Ícone do Troféu */
 .icone-trofeu {
-  width: 45px;
-  height: 45px; 
+  width: 55px;
+  height: 55px; 
    object-fit: contain;
   vertical-align: middle;
 }
 
 /* Ícone Loading */
 .icone-loading {
-  width: 45px;
-  height: 45px;
+  width: 65px;
+  height: 65px;
   object-fit: contain;
   vertical-align: middle;
 }
 
 /* Ícone Pause */
 .icone-pause {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   vertical-align: middle;
 }
