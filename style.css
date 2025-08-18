@@ -88,7 +88,7 @@ section {
 }
 
 .projeto {
-  background-color: #c4170c; /* vermelho Bradesco */
+  background-color: #c4170c; 
   color: white;
   padding: 1.5em;
   margin-bottom: 2em;
@@ -266,47 +266,54 @@ footer {
 
 /* Ícone do Troféu */
 .icone-trofeu {
-  height: 70;  
-  width: 70;  
+  width: 45px;
+  height: 45px; 
   margin-left: 8px; /* espaço da frase */
   vertical-align: middle;
+
+width: 45px;
+  height: 45px;
+  object-fit: contain;
+  vertical-align: middle;
+
+
 }
 
 /* Ícone Loading */
 .icone-loading {
-  height: 45;
-  width: 45;
+  width: 45px;
+  height: 45px;
   margin-left: 8px;
   vertical-align: middle;
 }
 
 /* Ícone Pause */
 .icone-pause {
-  height: 45;
-  width: 45; /* igual altura = quadrado */
+  width: 45px;
+  height: 45px;
   margin-left: 8px;
   vertical-align: middle;
 }
 /* Ícone do Troféu → tamanho de marcador */
 .icone-trofeu {
-  height: 1em;  /* altura do texto */
-  width: auto;  /* largura proporcional */
+  width: 45px;
+  height: 45px;
   margin-left: 4px; /* pequeno espaço do texto */
   vertical-align: middle;
 }
 
 /* Ícone Loading → tamanho de marcador */
 .icone-loading {
-  height: 1em;  
-  width: auto;
+  width: 45px;
+  height: 45px;
   margin-left: 4px;
   vertical-align: middle;
 }
 
 /* Ícone Pause → tamanho de marcador */
 .icone-pause {
-  height: 1em;  
-  width: 1em; /* quadrado */
+  width: 45px;
+  height: 45px;
   margin-left: 4px;
   vertical-align: middle;
 }
