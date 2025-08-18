@@ -11,6 +11,7 @@ Este é um portfólio desenvolvido em **HTML + CSS + JavaScript**.
 ## Recursos
 - Paleta de vermelhos
 - Layout responsivo e limpo
+- Ícones fofos gamers retrô
 
 ---
 © 2025 - Desenvolvido por Adriana Capozzi
