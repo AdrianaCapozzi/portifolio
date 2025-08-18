@@ -233,3 +233,27 @@ footer {
   text-align: center;
   padding: 1em;
 }
+.contato {
+  background-color: #cc092f; /* vermelho Bradesco */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;  /* cantos arredondados */
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.contato h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.contato a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contato a:hover {
+  color: #ffd700; /* dourado no hover, fica elegante */
+}
