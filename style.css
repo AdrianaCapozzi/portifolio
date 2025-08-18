@@ -268,22 +268,15 @@ footer {
 .icone-trofeu {
   width: 45px;
   height: 45px; 
-  margin-left: 8px; /* espaço da frase */
+   object-fit: contain;
   vertical-align: middle;
-
-width: 45px;
-  height: 45px;
-  object-fit: contain;
-  vertical-align: middle;
-
-
 }
 
 /* Ícone Loading */
 .icone-loading {
   width: 45px;
   height: 45px;
-  margin-left: 8px;
+  object-fit: contain;
   vertical-align: middle;
 }
 
@@ -291,29 +284,6 @@ width: 45px;
 .icone-pause {
   width: 45px;
   height: 45px;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-/* Ícone do Troféu → tamanho de marcador */
-.icone-trofeu {
-  width: 45px;
-  height: 45px;
-  margin-left: 4px; /* pequeno espaço do texto */
-  vertical-align: middle;
-}
-
-/* Ícone Loading → tamanho de marcador */
-.icone-loading {
-  width: 45px;
-  height: 45px;
-  margin-left: 4px;
-  vertical-align: middle;
-}
-
-/* Ícone Pause → tamanho de marcador */
-.icone-pause {
-  width: 45px;
-  height: 45px;
-  margin-left: 4px;
+  object-fit: contain;
   vertical-align: middle;
 }
