@@ -1,4 +1,4 @@
-# portifolio# Meu Portfólio
+## Meu Portfólio
 
 Este é um portfólio desenvolvido em **HTML + CSS + JavaScript**.
 
