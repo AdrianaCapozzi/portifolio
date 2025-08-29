@@ -248,12 +248,12 @@ footer {
 }
 
 .contato a:hover {
-  color: #ffd700; /* dourado no hover, fica elegante */
+  color: #ffd700;
 }
 
 /* Faixa vermelha do bloco Formação */
 .faixa-vermelha {
-  background-color: #b30000; /* vermelho forte */
+  background-color: #b30000; 
   color: #fff;
   padding: 20px;
   border-radius: 10px;
