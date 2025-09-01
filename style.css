@@ -287,18 +287,7 @@ footer {
   object-fit: contain;
   vertical-align: middle;
 }
-/* Links do contato */
-.link-contato {
-  color: #ffffff; 
-  text-decoration: none; /* remove o sublinhado */
-  font-weight: 500;
-  transition: 0.3s;
-}
 
-.link-contato:hover {
-  color: #ffd6d6; /* um rosado claro quando passa o mouse */
-  text-decoration: underline; /* aparece sublinhado só no hover */
-}
 /* Container dos links */
 .contato-links {
   display: flex;
