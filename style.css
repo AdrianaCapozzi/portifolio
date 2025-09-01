@@ -299,3 +299,23 @@ footer {
   color: #ffd6d6; /* um rosado claro quando passa o mouse */
   text-decoration: underline; /* aparece sublinhado só no hover */
 }
+/* Container dos links */
+.contato-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Estilo dos ícones */
+.contato-links a {
+  font-size: 2rem;       /* tamanho dos ícones */
+  color: #ffffff;        /* cor padrão branca */
+  transition: 0.3s ease; /* efeito suave */
+}
+
+/* Hover com efeito */
+.contato-links a:hover {
+  color: #ffd6d6;        /* cor rosada no hover */
+  transform: scale(1.2); /* dá um zoom gostosinho */
+}
