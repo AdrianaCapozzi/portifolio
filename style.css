@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
-  scroll-behavior: smooth; /* efeito suave nos cliques */
+  scroll-behavior: smooth;
 }
 
 /* Navegação fixa */
@@ -48,10 +48,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 4em; /* espaço por causa do menu fixo */
+  padding-top: 4em; /* espaço pelo menu fixo */
 }
 
-/* Perfil (foto + texto lado a lado) */
+/* Perfil */
 .perfil {
   display: flex;
   flex-wrap: wrap;
@@ -71,24 +71,34 @@ body {
   cursor: pointer;
 }
 
-/* Caixa vermelha do nome + descrição */
+/* Caixa do sobre mim */
 .sobre {
   background-color: #c4170c;
   color: white;
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
+  font-size: 1.1rem;
 }
 
-/* Seções gerais */
+/* Nome em destaque */
+.nome-destaque {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Seções */
 section {
   padding: 4em 2em;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+/* Projetos */
 .projeto {
-  background-color: #c4170c; 
+  background-color: #c4170c;
   color: white;
   padding: 1.5em;
   margin-bottom: 2em;
@@ -102,6 +112,7 @@ section {
   vertical-align: middle;
 }
 
+/* Links de vídeo */
 .video-link a {
   display: inline-flex;
   align-items: center;
@@ -119,7 +130,7 @@ section {
   height: 120px;
 }
 
-/* Retirar bolinhas da lista e deixar só os corações */
+/* Lista de destaques */
 .lista-destaques {
   list-style: none;
   padding-left: 0;
@@ -129,17 +140,17 @@ section {
   margin-bottom: 6px;
 }
 
-/* Ajustes do título e texto de introdução */
+/* Introdução projetos */
 .projetos h2 {
   margin-bottom: 10px;
 }
 
 .intro-projetos {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-weight: normal;
 }
 
+/* Voluntariado */
 .voluntariado {
   margin-top: 40px;
   padding: 20px;
@@ -150,25 +161,26 @@ section {
   margin-bottom: 15px;
 }
 
-/* Faixa vermelha (usada em experiência, formação, voluntariado etc.) */
+/* Faixa vermelha */
 .faixa-vermelha {
   background-color: #c4170c;
-  color: white;
+  color: #fff;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
 }
 
 .faixa-vermelha h2 {
-  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8em;
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
-  margin-bottom: 15px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
+/* Experiência e formação */
 .experiencia-item,
 #formacao p {
   margin-bottom: 15px;
@@ -189,7 +201,6 @@ section {
 
 .youtube-logo {
   width: 24px;
-  height: auto;
   margin-right: 8px;
 }
 
@@ -197,7 +208,7 @@ section {
 .contato {
   background-color: #c4170c;
   color: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   text-align: center;
   margin: 30px auto;
@@ -206,17 +217,21 @@ section {
 
 .contato h2 {
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .contato a {
   color: #ffffff;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 15px;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .contato a:hover {
   color: #ffd700;
+  transform: scale(1.2);
 }
 
 /* Rodapé */
@@ -226,64 +241,22 @@ footer {
   text-align: center;
   padding: 1em;
 }
-.contato {
-  background-color: #cc092f; /* vermelho Bradesco */
-  color: white;
-  padding: 20px;
-  border-radius: 10px;  /* cantos arredondados */
-  text-align: center;
-  margin: 30px auto;
-  max-width: 600px;
-}
 
-.contato h2 {
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.contato a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.contato a:hover {
-  color: #ffd700;
-}
-
-/* Faixa vermelha do bloco Formação */
-.faixa-vermelha {
-  background-color: #b30000; 
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.faixa-vermelha h2 {
-  margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
-/* Ícone do Troféu */
+/* Ícones */
 .icone-trofeu {
   width: 55px;
-  height: 55px; 
-   object-fit: contain;
-  vertical-align: middle;
+  height: 55px;
+  object-fit: contain;
 }
 
-/* Ícone Loading */
 .icone-loading {
   width: 65px;
   height: 65px;
   object-fit: contain;
-  vertical-align: middle;
 }
 
-/* Ícone Pause */
 .icone-pause {
   width: 55px;
   height: 55px;
   object-fit: contain;
-  vertical-align: middle;
 }
