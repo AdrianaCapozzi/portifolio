@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #c4170c; /* vermelho Bradesco */
+  background: #c4170c;
   padding: 1em;
   z-index: 1000;
 }
@@ -48,7 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 4em; /* espaço pelo menu fixo */
+  padding-top: 4em;
 }
 
 /* Perfil */
@@ -89,11 +89,11 @@ body {
   text-align: center;
 }
 
-/* Ícone de certificado (abaixo do nome, centralizado) */
+/* Ícone certificado abaixo do nome */
 .icone-certificado {
   display: block;
-  margin: 0.25rem auto 0.75rem auto; /* centraliza e dá espaço */
-  width: 2.8rem;   /* maior que as fontes */
+  margin: 0.25rem auto 0.75rem auto;
+  width: 1.5em; /* um pouco maior que a fonte */
   height: auto;
 }
 
@@ -113,28 +113,28 @@ section {
   border-radius: 12px;
 }
 
-/* Ícones: maiores e como marcador (começo da linha) */
+/* Ícones normais */
 .icon {
   vertical-align: middle;
-  width: 1.3em;       /* maior que antes — ajusta com a fonte do texto */
-  height: auto;
-  margin-right: 0.6rem;
+  width: 1em;       /* igual ao texto */
+  height: 1em;
+  margin-right: 0.4rem;
   object-fit: contain;
   display: inline-block;
 }
 
-/* Ícone específico para títulos (um pouco maior) */
+/* Ícones de título */
 .icon-title {
-  width: 1.6em;
-  height: auto;
-  margin-right: 0.6rem;
+  width: 1.2em;     /* só um pouco maior */
+  height: 1.2em;
+  margin-right: 0.5rem;
 }
 
-/* Ícone YouTube nos links (um pouco maior para destacar) */
+/* Ícones YouTube */
 .icon-youtube {
-  width: 1.4em;
-  height: auto;
-  margin-right: 0.6rem;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5rem;
 }
 
 /* Links de vídeo */
@@ -249,7 +249,6 @@ section {
   transform: scale(1.2);
 }
 
-/* Ajuste tamanho dos ícones dos links de contato (font awesome) */
 .contato a i {
   font-size: 1.6rem;
 }
