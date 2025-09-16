@@ -85,8 +85,16 @@ body {
 .nome-destaque {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
+}
+
+/* Ícone de certificado */
+.icone-certificado {
+  display: block;
+  margin: 0 auto 15px auto; /* centralizado e com espaço abaixo */
+  width: 3rem;   /* um pouco maior que a fonte */
+  height: auto;
 }
 
 /* Seções */
@@ -105,15 +113,17 @@ section {
   border-radius: 12px;
 }
 
-/* Ícones alinhados com texto */
+/* Ícones alinhados com o texto e do tamanho da fonte */
 .heart-icon,
 .icone-trofeu,
 .icone-loading,
-.icone-pause {
-  vertical-align: middle; /* alinha com o texto */
-  width: 28px;           /* relativo ao texto */
-  height: auto;           /* mantém proporção */
-  margin-right: 0.4em;    /* espaçamento do texto */
+.icone-pause,
+.icon-youtube,
+.youtube-logo {
+  vertical-align: middle;
+  width: 1em;       /* acompanha o tamanho da fonte */
+  height: 1em;
+  margin-right: 0.4em;
   object-fit: contain;
 }
 
@@ -131,8 +141,8 @@ section {
 }
 
 .icon-youtube {
-  width: 220px;
-  height: 120px;
+  width: 1em;
+  height: 1em;
 }
 
 /* Lista de destaques */
@@ -205,7 +215,8 @@ section {
 }
 
 .youtube-logo {
-  width: 24px;
+  width: 1em;
+  height: 1em;
   margin-right: 8px;
 }
 
@@ -246,4 +257,3 @@ footer {
   text-align: center;
   padding: 1em;
 }
-
