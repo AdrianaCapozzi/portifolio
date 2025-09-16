@@ -111,7 +111,7 @@ section {
 .icone-loading,
 .icone-pause {
   vertical-align: middle; /* alinha com o texto */
-  width: 1.5em;           /* relativo ao texto */
+  width: 28px;           /* relativo ao texto */
   height: auto;           /* mantém proporção */
   margin-right: 0.4em;    /* espaçamento do texto */
   object-fit: contain;
