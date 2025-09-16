@@ -89,11 +89,11 @@ body {
   text-align: center;
 }
 
-/* Ícone de certificado */
+/* Ícone de certificado (abaixo do nome, centralizado) */
 .icone-certificado {
   display: block;
-  margin: 0 auto 15px auto; /* centralizado e com espaço abaixo */
-  width: 3rem;   /* um pouco maior que a fonte */
+  margin: 0.25rem auto 0.75rem auto; /* centraliza e dá espaço */
+  width: 2.8rem;   /* maior que as fontes */
   height: auto;
 }
 
@@ -113,18 +113,28 @@ section {
   border-radius: 12px;
 }
 
-/* Ícones alinhados com o texto e do tamanho da fonte */
-.heart-icon,
-.icone-trofeu,
-.icone-loading,
-.icone-pause,
-.icon-youtube,
-.youtube-logo {
+/* Ícones: maiores e como marcador (começo da linha) */
+.icon {
   vertical-align: middle;
-  width: 1em;       /* acompanha o tamanho da fonte */
-  height: 1em;
-  margin-right: 0.4em;
+  width: 1.3em;       /* maior que antes — ajusta com a fonte do texto */
+  height: auto;
+  margin-right: 0.6rem;
   object-fit: contain;
+  display: inline-block;
+}
+
+/* Ícone específico para títulos (um pouco maior) */
+.icon-title {
+  width: 1.6em;
+  height: auto;
+  margin-right: 0.6rem;
+}
+
+/* Ícone YouTube nos links (um pouco maior para destacar) */
+.icon-youtube {
+  width: 1.4em;
+  height: auto;
+  margin-right: 0.6rem;
 }
 
 /* Links de vídeo */
@@ -132,17 +142,12 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #ffe;
+  color: #fff;
   text-decoration: none;
 }
 
 .video-link a:hover {
   text-decoration: underline;
-}
-
-.icon-youtube {
-  width: 1em;
-  height: 1em;
 }
 
 /* Lista de destaques */
@@ -214,12 +219,6 @@ section {
   text-decoration: underline;
 }
 
-.youtube-logo {
-  width: 1em;
-  height: 1em;
-  margin-right: 8px;
-}
-
 /* Contato */
 .contato {
   background-color: #c4170c;
@@ -248,6 +247,11 @@ section {
 .contato a:hover {
   color: #ffd700;
   transform: scale(1.2);
+}
+
+/* Ajuste tamanho dos ícones dos links de contato (font awesome) */
+.contato a i {
+  font-size: 1.6rem;
 }
 
 /* Rodapé */
