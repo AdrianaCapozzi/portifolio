@@ -116,7 +116,7 @@ section {
 /* Ícones normais */
 .icon {
   vertical-align: middle;
-  width: 1.8em;       /* igual ao texto */
+  width: 3.0em;       /* igual ao texto */
   height: 1em;
   margin-right: 0.4rem;
   object-fit: contain;
@@ -125,15 +125,15 @@ section {
 
 /* Ícones de título */
 .icon-title {
-  width: 1.8em;     /* só um pouco maior */
-  height: 1.8em;
+  width: 3.0em;     /* só um pouco maior */
+  height: 3.0em;
   margin-right: 0.5rem;
 }
 
 /* Ícones YouTube */
 .icon-youtube {
-  width: 1.8em;
-  height: 1.8em;
+  width: 3.0em;
+  height: 3.0em;
   margin-right: 0.5rem;
 }
 
