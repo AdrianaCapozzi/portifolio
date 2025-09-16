@@ -93,7 +93,7 @@ body {
 .icone-certificado {
   display: block;
   margin: 0.25rem auto 0.75rem auto;
-  width: 1.8em; 
+  width: 3.5em; 
   height: auto;
 }
 
@@ -132,8 +132,8 @@ section {
 
 /* Ícones YouTube */
 .icon-youtube {
-  width: 3.0em;
-  height: 3.0em;
+  width: 6.0em;
+  height: 6.0em;
   margin-right: 0.5rem;
 }
 
