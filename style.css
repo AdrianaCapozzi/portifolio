@@ -93,7 +93,7 @@ body {
 .icone-certificado {
   display: block;
   margin: 0.25rem auto 0.75rem auto;
-  width: 3.5em; 
+  width: 2.0em; 
   height: auto;
 }
 
@@ -116,7 +116,7 @@ section {
 /* Ícones normais */
 .icon {
   vertical-align: middle;
-  width: 3.0em;       /* igual ao texto */
+  width: 2.0em;       /* igual ao texto */
   height: 1em;
   margin-right: 0.4rem;
   object-fit: contain;
@@ -125,15 +125,15 @@ section {
 
 /* Ícones de título */
 .icon-title {
-  width: 3.0em;     /* só um pouco maior */
+  width: 2.0em;     /* só um pouco maior */
   height: 3.0em;
   margin-right: 0.5rem;
 }
 
 /* Ícones YouTube */
 .icon-youtube {
-  width: 6.0em;
-  height: 6.0em;
+  width: 7.0em;
+  height: 7.0em;
   margin-right: 0.5rem;
 }
 
