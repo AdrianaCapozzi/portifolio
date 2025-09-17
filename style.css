@@ -235,23 +235,45 @@ section {
   font-size: 28px;
 }
 
-.contato a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 2rem;
-  margin: 0 15px;
-  transition: transform 0.2s ease, color 0.2s ease;
+/* ---- BLOCO AJUSTADO DOS ÍCONES DE CONTATO ---- */
+.contato-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espaço entre os ícones */
+  margin-top: 15px;
 }
 
-.contato a:hover {
-  color: #ffd700;
-  transform: scale(1.2);
+.contato-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;   /* bolinha redonda */
+  font-size: 24px;
+  color: #fff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.contato a i {
-  font-size: 1.6rem;
+/* cores oficiais */
+.contato-links a[title="Email"] {
+  background-color: #D44638; /* Gmail */
 }
+
+.contato-links a[title="LinkedIn"] {
+  background-color: #0A66C2; /* LinkedIn */
+}
+
+.contato-links a[title="GitHub"] {
+  background-color: #333; /* GitHub */
+}
+
+/* animação no hover */
+.contato-links a:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+/* ---- FIM DO BLOCO AJUSTADO ---- */
 
 /* Rodapé */
 footer {
