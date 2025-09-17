@@ -93,7 +93,7 @@ body {
 .icone-certificado {
   display: block;
   margin: 0.25rem auto 0.75rem auto;
-  width: 2.0em; 
+  width: 2em; 
   height: auto;
 }
 
@@ -116,7 +116,7 @@ section {
 /* Ícones normais */
 .icon {
   vertical-align: middle;
-  width: 2.0em;       /* igual ao texto */
+  width: 1em;       /* do tamanho da fonte */
   height: 1em;
   margin-right: 0.4rem;
   object-fit: contain;
@@ -125,15 +125,26 @@ section {
 
 /* Ícones de título */
 .icon-title {
-  width: 2.0em;     /* só um pouco maior */
-  height: 3.0em;
+  width: 1.2em;     
+  height: 1.2em;
   margin-right: 0.5rem;
+}
+
+/* Ícones específicos: troféu, loading, pause */
+.icone-trofeu,
+.icone-loading,
+.icone-pause {
+  vertical-align: middle;
+  width: 1.2em;   /* ligeiramente maior que a fonte */
+  height: 1.2em;
+  margin-right: 0.4rem;
+  object-fit: contain;
 }
 
 /* Ícones YouTube */
 .icon-youtube {
-  width: 7.0em;
-  height: 7.0em;
+  width: 7em;
+  height: 7em;
   margin-right: 0.5rem;
 }
 
@@ -239,7 +250,7 @@ section {
 .contato-links {
   display: flex;
   justify-content: center;
-  gap: 20px; /* espaço entre os ícones */
+  gap: 20px;
   margin-top: 15px;
 }
 
@@ -249,26 +260,24 @@ section {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;   /* bolinha redonda */
+  border-radius: 50%;
   font-size: 24px;
   color: #fff;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* cores oficiais */
 .contato-links a[title="Email"] {
-  background-color: #D44638; /* Gmail */
+  background-color: #D44638;
 }
 
 .contato-links a[title="LinkedIn"] {
-  background-color: #0A66C2; /* LinkedIn */
+  background-color: #0A66C2;
 }
 
 .contato-links a[title="GitHub"] {
-  background-color: #333; /* GitHub */
+  background-color: #333;
 }
 
-/* animação no hover */
 .contato-links a:hover {
   transform: scale(1.15);
   opacity: 0.9;
@@ -282,3 +291,4 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
