@@ -1,4 +1,4 @@
-/* Reset */
+//* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +79,7 @@ body {
   border-radius: 10px;
   max-width: 500px;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 /* Nome em destaque */
@@ -93,7 +94,7 @@ body {
 .icone-certificado {
   display: block;
   margin: 0.25rem auto 0.75rem auto;
-  width: 2em; 
+  width: 1.5em;   /* ALTERADO → tamanho proporcional à fonte */
   height: auto;
 }
 
@@ -113,38 +114,30 @@ section {
   border-radius: 12px;
 }
 
-/* Ícones normais */
-.icon {
-  vertical-align: middle;
-  width: 1em;       /* do tamanho da fonte */
-  height: 1em;
-  margin-right: 0.4rem;
-  object-fit: contain;
-  display: inline-block;
-}
-
-/* Ícones de título */
-.icon-title {
-  width: 1.2em;     
-  height: 1.2em;
-  margin-right: 0.5rem;
-}
-
-/* Ícones específicos: troféu, loading, pause */
+/* Ícones inline (lista, texto, etc.) */
+.heart-icon,
 .icone-trofeu,
 .icone-loading,
 .icone-pause {
   vertical-align: middle;
-  width: 1em;   /* ligeiramente maior que a fonte */
+  width: 1em;     /* ALTERADO → mesmo tamanho da fonte */
   height: 1em;
   margin-right: 0.4rem;
   object-fit: contain;
 }
 
+/* Ícones nos títulos */
+.faixa-vermelha h2 img {
+  width: 1.2em;   /* ALTERADO → ligeiramente maior */
+  height: 1.2em;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
 /* Ícones YouTube */
 .icon-youtube {
-  width: 7em;
-  height: 7em;
+  width: 2.5em;   /* ALTERADO → proporcional ao texto */
+  height: auto;
   margin-right: 0.5rem;
 }
 
@@ -281,7 +274,6 @@ section {
   transform: scale(1.15);
   opacity: 0.9;
 }
-/* ---- FIM DO BLOCO AJUSTADO ---- */
 
 /* Rodapé */
 footer {
@@ -290,4 +282,3 @@ footer {
   text-align: center;
   padding: 1em;
 }
-
