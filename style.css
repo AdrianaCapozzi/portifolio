@@ -94,7 +94,7 @@ body {
 .icone-certificado {
   display: block;
   margin: 0.25rem auto 0.75rem auto;
-  width: 1.5em;   /* ALTERADO → tamanho proporcional à fonte */
+  width: 1em;   
   height: auto;
 }
 
