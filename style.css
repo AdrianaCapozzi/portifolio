@@ -135,8 +135,8 @@ section {
 .icone-loading,
 .icone-pause {
   vertical-align: middle;
-  width: 1.2em;   /* ligeiramente maior que a fonte */
-  height: 1.2em;
+  width: 1em;   /* ligeiramente maior que a fonte */
+  height: 1em;
   margin-right: 0.4rem;
   object-fit: contain;
 }
