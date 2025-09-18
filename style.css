@@ -88,14 +88,17 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-/* Ícone certificado abaixo do nome */
+/* Ícone certificado ao lado do nome */
 .icone-certificado {
-  display: block;
-  margin: 0.25rem auto 0.75rem auto;
-  width: 1em;   
-  height: auto;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
 }
 
 /* Seções */
@@ -114,21 +117,22 @@ section {
   border-radius: 12px;
 }
 
-/* Ícones inline (lista, texto, etc.) */
+/* Ícones inline como marcadores */
 .heart-icon,
 .icone-trofeu,
 .icone-loading,
 .icone-pause {
   vertical-align: middle;
-  width: 1em;     /* ALTERADO → mesmo tamanho da fonte */
+  width: 1em;
   height: 1em;
   margin-right: 0.4rem;
   object-fit: contain;
+  display: inline-block;
 }
 
 /* Ícones nos títulos */
 .faixa-vermelha h2 img {
-  width: 1.2em;   /* ALTERADO → ligeiramente maior */
+  width: 1.2em;
   height: 1.2em;
   margin-right: 0.4rem;
   vertical-align: middle;
@@ -136,7 +140,7 @@ section {
 
 /* Ícones YouTube */
 .icon-youtube {
-  width: 2.5em;   /* ALTERADO → proporcional ao texto */
+  width: 2.5em;
   height: auto;
   margin-right: 0.5rem;
 }
