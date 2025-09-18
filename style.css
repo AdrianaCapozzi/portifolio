@@ -64,7 +64,7 @@ body {
 }
 .sobre {
   background-color: #c4170c;
-  color: white;
+  color: rgb(249, 229, 229);
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
@@ -101,15 +101,15 @@ section {
 
 /* Ícones título */
 .faixa-vermelha h2 img {
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.5em;
+  height: 1.5em;
   margin-right: 0.4rem;
   vertical-align: middle;
 }
 
 /* Ícones YouTube */
 .icon-youtube {
-  width: 2.5em;
+  width: 2.8em;
   height: auto;
   margin-right: 0.5rem;
 }
@@ -139,8 +139,8 @@ section {
 .heart-list li::before {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   background: url("img/heart.png") no-repeat center center;
   background-size: contain;
   position: absolute;
