@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meu Portfólio - Adriana Capozzi ❤️</title>
+  <title>Meu Portfólio - Adriana Capozzi</title>
   <link rel="icon" type="image/png" href="heart.png">
   <!-- Fonte dos ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- botão dark/light mode -->
+  <button id="btn-tema">☀️ Modo Escuro</button>
 
   <nav class="navbar">
     <ul>
@@ -37,6 +40,8 @@
         <p>Graduanda em Engenharia de Computação | Pós Graduanda em Administração de Banco de Dados</p>
         <p>Curiosa em Desenvolvimento Web</p>
         <p>Paulistana, mãe, ouvinte de indie rock e samba, dayly learning e solucionadora de problemas</p>
+        <!-- Saudação aparecerá aqui -->
+        <div id="saudacao"></div>
       </div>
     </div>
   </header>
@@ -45,17 +50,14 @@
     <!-- Formação -->
     <section id="formacao" class="faixa-vermelha">
       <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Formação</h2>
-
       <p>
         <strong>Bacharelado em Tecnologia da Informação com ênfase em desenvolvimento de software e IoT</strong>
         <br> Univesp - Universidade Virtual do Estado de São Paulo <br> Julho de 2022 a Agosto de 2027
       </p>
-
       <p>
         <strong>Graduanda em Engenharia de Computação</strong>
         <br> Univesp - Universidade Virtual do Estado de São Paulo <br> Julho de 2022 a Agosto de 2027
       </p>
-
       <p>
         <strong>Técnica em Radiologia Médica</strong>
         <br> Senac São Paulo <br> Janeiro de 2002 a Dezembro de 2004
@@ -70,157 +72,55 @@
         disciplina presente na grade curricular da UNIVESP, do quarto até o nono semestre.
       </h3>
 
-      <!-- PROJETO 1 -->
-      <article class="projeto">
-        <h3>Análise de dados para prevenção de enchentes</h3>
-        <p><strong>Período:</strong> Agosto 2025 - Dezembro 2025</p>
-        <p>Coleta de dados por meio de sensores IoT, processamento dos dados para análise preditiva e introdução à ML.</p>
-        <p><strong>Tecnologias:</strong> Databricks, Python, Matplotlib, MySQL, GitHub Actions, HTML/CSS/JS</p>
-        <p><strong>Destaques:</strong></p>
-        <ul class="lista-destaques heart-list">
-          <li>Elaboração do relatório técnico e levantamento bibliográfico;</li>
-          <li>ETL;</li>
-          <li>Desenvolvimento da interface;</li>
-          <li>Criação de base de dados;</li>
-          <li>Configuração de pipeline de desenvolvimento;</li>
-          <li>Comunicação com stakeholders.</li>
-        </ul>
-        <p class="video-link">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> Assista: EM BREVE
-          </a>
-        </p>
-      </article>
+      <!-- Setas do carrossel -->
+      <button id="seta-esquerda">⬅️</button>
+      <button id="seta-direita">➡️</button>
 
-      <!-- PROJETO 2 -->
-      <article class="projeto">
-        <h3>Portal da Zeladoria - Análise de Dados e CI</h3>
-        <p><strong>Período:</strong> Fevereiro 2025 - Junho 2025</p>
-        <p>Desenvolvimento de solução web com foco em coleta, modelagem e visualização de dados.</p>
-        <p><strong>Tecnologias:</strong> Python, Flask, MySQL, GitHub Actions, HTML/CSS/JS</p>
-        <p><strong>Destaques:</strong></p>
-        <ul class="lista-destaques heart-list">
-          <li>Elaboração do relatório técnico e levantamento bibliográfico;</li>
-          <li>SCRUM master;</li>
-          <li>Implementação de Integração Contínua;</li>
-          <li>Criação de base de dados para Power BI;</li>
-          <li>Configuração de pipeline de desenvolvimento;</li>
-          <li>Comunicação com stakeholders.</li>
-        </ul>
-        <p class="video-link">
-          <a href="https://youtu.be/M72Qb6XuZE0?si=2HpAdHD7_fWKguNj" target="_blank" rel="noopener noreferrer">
-            <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> Assista: Portal da Zeladoria
-          </a>
-        </p>
-      </article>
-
-      <!-- PROJETO 3 -->
-      <article class="projeto">
-        <h3>Conecta São Vicente - Portal da Zeladoria</h3>
-        <p><strong>Período:</strong> Julho 2024 - Novembro 2024</p>
-        <p>Protótipo de software web para agendamento de serviços de zeladoria urbana.</p>
-        <p><strong>Tecnologias:</strong> Python, Flask, Google Sheets, HTML/CSS/JS</p>
-        <p><strong>Destaques:</strong></p>
-        <ul class="lista-destaques heart-list">
-          <li>Elaboração do relatório técnico e levantamento bibliográfico;</li>
-          <li>SCRUM master;</li>
-          <li>Criação de base de dados no Google Sheets;</li>
-          <li>Interface de gráficos com JS Charts;</li>
-          <li>Comunicação com stakeholders.</li>
-        </ul>
-        <p class="video-link">
-          <a href="https://youtu.be/NVHUTLvehrw?si=ZfuGrl4bgor8IiHI" target="_blank" rel="noopener noreferrer">
-            <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> São Vicente Conecta
-          </a>
-        </p>
-      </article>
-
-      <!-- PROJETO 4 -->
-      <article class="projeto">
-        <h3>Sistema ERP para Pequenos Produtores Rurais</h3>
-        <p><strong>Período:</strong> Fevereiro - Maio 2024</p>
-        <p>Desenvolvimento do front-end, banco de dados e documentação.</p>
-        <p><strong>Tecnologias:</strong> HTML, CSS, JS, SQLite, GitHub</p>
-        <p><strong>Destaques:</strong></p>
-        <ul class="lista-destaques heart-list">
-          <li>Desenvolvimento da interface e CRUD's;</li>
-          <li>Gestão do banco de dados;</li>
-          <li>Documentação do código;</li>
-          <li>Elaboração do relatório técnico e levantamento bibliográfico;</li>
-          <li>Liderança na comunicação com stakeholders.</li>
-        </ul>
-        <p class="video-link">
-          <a href="https://youtu.be/cQEA7apmT9Q?si=R2wbCLHpPyVj8Loy" target="_blank" rel="noopener noreferrer">
-            <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> ERP para Coletivo Morro das Panelas
-          </a>
-        </p>
-      </article>
+      <!-- PROJETOS (já estavam, só aproveitamos) -->
+      <article class="projeto"> ... </article>
+      <article class="projeto"> ... </article>
+      <article class="projeto"> ... </article>
+      <article class="projeto"> ... </article>
     </section>
 
     <!-- Experiência -->
-    <section id="experiencia" class="faixa-vermelha">
-      <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Experiência</h2>
-      <div class="experiencia-item">
-        <h3>Bradesco Seguros</h3>
-        <p><strong>Cargo:</strong> Estágio em Gestão Comercial e Analytics / Vida</p>
-        <p><strong>Início:</strong> Março de 2025</p>
-      </div>
-      <div class="experiencia-item">
-        <h3>Prefeitura Municipal da Estância Balneária de Peruíbe</h3>
-        <p><strong>Cargo:</strong> Estágio em Informática / Polo Univesp</p>
-        <p><strong>Período:</strong> Abril de 2023 a Janeiro de 2024</p>
-      </div>
-    </section>
+    <section id="experiencia" class="faixa-vermelha"> ... </section>
 
     <!-- Voluntariado -->
-    <section id="voluntariado" class="faixa-vermelha">
-      <h2><img src="img/diamond.png" alt="Diamante" class="icon icon-title">Voluntariado</h2>
-      <ul class="lista-destaques heart-list">
-        <li><strong>Comunicadora e Orientadora em Tecnologia</strong></li>
-      </ul>
-      <p><strong>Período:</strong> janeiro de 2019 - janeiro de 2024</p>
-      <p>Organização de uma rede de apoio a pequenos produtores rurais em Peruíbe.</p>
-      <div class="links-youtube">
-        <p><a href="https://www.youtube.com/live/dRzbQ5TYu0M?si=vRYoRkjiTU7RwOOY" target="_blank">
-          <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> Sesc Registro - Economia Solidária
-        </a></p>
-        <p><a href="https://youtu.be/Eq1nXwpdoDw?si=zZZublQTpLPnHJSF" target="_blank">
-          <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> Economia Solidária na Pandemia
-        </a></p>
-        <p><a href="https://youtu.be/ojHEsKgAR_w?si=6GLfyfSd-EClic7Y" target="_blank">
-          <img src="img/youtb.png" alt="YouTube" class="icon icon-youtube"> Rede Solidária de Peruíbe
-        </a></p>
-      </div>
-    </section>
+    <section id="voluntariado" class="faixa-vermelha"> ... </section>
 
     <!-- Congressos -->
     <section id="congressos" class="faixa-vermelha">
       <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Congressos</h2>
-      <p>IoT Congress Brazil 2024 | em construção</p>
+      <!-- Slideshow -->
+      <div class="congressos-slide"><img src="img/congresso1.png" alt="Congresso 1"></div>
+      <div class="congressos-slide"><img src="img/congresso2.png" alt="Congresso 2"></div>
+      <div class="congressos-slide"><img src="img/congresso3.png" alt="Congresso 3"></div>
     </section>
 
-    <section id="ead" class="faixa-vermelha">
-      <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Transição de Carreira</h2>
-      <p>em construção</p>
-    </section>
-
-    <section id="carreira" class="faixa-vermelha">
-      <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Ensino a Distância</h2>
-      <p>Quem é o aluno EaD?</p>
-    </section>
+    <section id="ead" class="faixa-vermelha"> ... </section>
+    <section id="carreira" class="faixa-vermelha"> ... </section>
 
     <!-- Contato -->
     <section id="contato" class="faixa-vermelha">
       <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Contato</h2>
       <div class="contato-links">
-        <a href="mailto:tatacapozzi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/adriana-capozzi-univesp" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/AdrianaCapozzi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:tatacapozzi@gmail.com" id="email-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/adriana-capozzi-univesp" target="_blank" id="linkedin-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/AdrianaCapozzi" target="_blank" id="github-icon" title="GitHub"><i class="fab fa-github"></i></a>
       </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="faixa-vermelha">
+      <h2><img src="img/star.png" alt="Estrela" class="icon icon-title">Qual sua opinião?</h2>
+      <button id="quiz-btn">Você gostou de passar por aqui?</button>
     </section>
 
   </main>
 
+  <!-- Chamada do JS -->
+  <script src="script.js"></script>
 </body>
 </html>
 
