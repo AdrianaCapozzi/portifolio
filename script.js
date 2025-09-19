@@ -87,3 +87,31 @@ if (botaoQuiz) {
     }
   });
 }
+// Saudação baseada no horário
+function saudacaoHorario() {
+  const hora = new Date().getHours();
+  if (hora < 12) return "Bom dia, visitante!";
+  if (hora < 18) return "Boa tarde, visitante!";
+  return "Boa noite, visitante!";
+}
+
+// Mostrar popup customizado
+window.onload = function () {
+  const popup = document.getElementById("popup-boasvindas");
+  const mensagem = document.getElementById("mensagem-saudacao");
+  const botaoSim = document.getElementById("popup-sim");
+  const botaoNao = document.getElementById("popup-nao");
+
+  mensagem.textContent = saudacaoHorario();
+  popup.style.display = "flex";
+
+  botaoSim.addEventListener("click", () => {
+    alert("Que bom que você gostou! Se quiser, me mande um e-mail com a sua opinião 😊");
+    popup.style.display = "none";
+  });
+
+  botaoNao.addEventListener("click", () => {
+    alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua sugestão 🙏");
+    popup.style.display = "none";
+  });
+};
