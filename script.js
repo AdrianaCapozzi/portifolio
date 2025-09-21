@@ -105,5 +105,12 @@ window.addEventListener("load", () => {
       alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua opinião e, se tiver, sugestão de melhoria 🙏");
       popup.style.display = "none";
     });
+    window.addEventListener("load", () => {
+  setTimeout(() => {
+    const popup = document.getElementById("popup-boasvindas");
+    popup.style.display = "flex";
+  }, 60000); // 60.000 ms = 1 minuto
+});
+
   }
 });
