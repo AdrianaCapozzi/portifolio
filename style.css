@@ -254,7 +254,7 @@ section {
   transition: background 0.3s ease;
 }
 #popup-boasvindas button:hover {
-  background: #357ABD;
+  background: #d50303;
 }
 
 /* === Dark Mode === */
