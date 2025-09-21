@@ -102,7 +102,7 @@ window.addEventListener("load", () => {
     });
 
     botaoNao.addEventListener("click", () => {
-      alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua sugestão 🙏");
+      alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua opinião e, se tiver, sugestão de melhoria 🙏");
       popup.style.display = "none";
     });
   }
