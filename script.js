@@ -115,3 +115,21 @@ window.onload = function () {
     popup.style.display = "none";
   });
 };
+// Trocar tema
+document.getElementById("botao-tema").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Mostrar popup ao carregar
+window.addEventListener("load", () => {
+  const popup = document.getElementById("popup-boasvindas");
+  popup.style.display = "flex";
+});
+
+document.getElementById("popup-sim").onclick = () => {
+  document.getElementById("popup-boasvindas").style.display = "none";
+};
+document.getElementById("popup-nao").onclick = () => {
+  alert("Tudo bem, volte quando quiser! 😊");
+  document.getElementById("popup-boasvindas").style.display = "none";
+};
