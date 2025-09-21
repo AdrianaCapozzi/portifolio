@@ -1,4 +1,4 @@
-// Foto que aumenta ao clicar
+// ===== Foto que aumenta ao clicar =====
 function aumentarFoto() {
   const foto = document.getElementById('minha-foto');
   foto.style.transform =
@@ -6,18 +6,15 @@ function aumentarFoto() {
 }
 document.getElementById('minha-foto').addEventListener('click', aumentarFoto);
 
-// Saudação + Popup
+// ===== Saudação baseada no horário =====
 function saudacaoHorario() {
   const hora = new Date().getHours();
   if (hora < 12) return "Bom dia, visitante!";
   if (hora < 18) return "Boa tarde, visitante!";
   return "Boa noite, visitante!";
 }
-window.onload = function () {
-  alert(saudacaoHorario());
-};
 
-// Hover em foto e navbar
+// ===== Hover em foto e navbar =====
 function aplicarHoverZoom(selector) {
   const elementos = document.querySelectorAll(selector);
   elementos.forEach(el => {
@@ -32,13 +29,13 @@ function aplicarHoverZoom(selector) {
 }
 aplicarHoverZoom("#minha-foto, .navbar button, .navbar a");
 
-// Dark mode
+// ===== Dark mode =====
 const botaoTema = document.getElementById("botao-tema");
 botaoTema.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
-// Slideshow Congressos
+// ===== Slideshow Congressos =====
 let slideIndex = 0;
 function mostrarSlides() {
   const slides = document.querySelectorAll(".slide-congresso");
@@ -50,7 +47,7 @@ function mostrarSlides() {
 }
 mostrarSlides();
 
-// Carrossel Projetos
+// ===== Carrossel Projetos =====
 let projetoIndex = 0;
 function mostrarProjetos(n) {
   const projetos = document.querySelectorAll(".projeto");
@@ -64,7 +61,7 @@ document.getElementById("seta-esq").addEventListener("click", () => mostrarProje
 document.getElementById("seta-dir").addEventListener("click", () => mostrarProjetos(1));
 mostrarProjetos(0);
 
-// Tooltips
+// ===== Tooltips =====
 function aplicarTooltip(selector, texto) {
   const elemento = document.querySelector(selector);
   if (elemento) elemento.setAttribute("title", texto);
@@ -75,7 +72,7 @@ aplicarTooltip("#linkedin-link", "LinkedIn");
 aplicarTooltip("#github-link", "GitHub");
 aplicarTooltip("#email-link", "E-mail");
 
-// Quiz
+// ===== Quiz =====
 const botaoQuiz = document.getElementById("botao-quiz");
 if (botaoQuiz) {
   botaoQuiz.addEventListener("click", () => {
@@ -87,49 +84,26 @@ if (botaoQuiz) {
     }
   });
 }
-// Saudação baseada no horário
-function saudacaoHorario() {
-  const hora = new Date().getHours();
-  if (hora < 12) return "Bom dia, visitante!";
-  if (hora < 18) return "Boa tarde, visitante!";
-  return "Boa noite, visitante!";
-}
 
-// Mostrar popup customizado
-window.onload = function () {
+// ===== Popup de boas-vindas =====
+window.addEventListener("load", () => {
   const popup = document.getElementById("popup-boasvindas");
   const mensagem = document.getElementById("mensagem-saudacao");
   const botaoSim = document.getElementById("popup-sim");
   const botaoNao = document.getElementById("popup-nao");
 
-  mensagem.textContent = saudacaoHorario();
-  popup.style.display = "flex";
+  if (popup && mensagem && botaoSim && botaoNao) {
+    mensagem.textContent = saudacaoHorario();
+    popup.style.display = "flex";
 
-  botaoSim.addEventListener("click", () => {
-    alert("Que bom que você gostou! Se quiser, me mande um e-mail com a sua opinião 😊");
-    popup.style.display = "none";
-  });
+    botaoSim.addEventListener("click", () => {
+      alert("Que bom que você gostou! Se quiser, me mande um e-mail com a sua opinião 😊");
+      popup.style.display = "none";
+    });
 
-  botaoNao.addEventListener("click", () => {
-    alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua sugestão 🙏");
-    popup.style.display = "none";
-  });
-};
-// Trocar tema
-document.getElementById("botao-tema").addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+    botaoNao.addEventListener("click", () => {
+      alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua sugestão 🙏");
+      popup.style.display = "none";
+    });
+  }
 });
-
-// Mostrar popup ao carregar
-window.addEventListener("load", () => {
-  const popup = document.getElementById("popup-boasvindas");
-  popup.style.display = "flex";
-});
-
-document.getElementById("popup-sim").onclick = () => {
-  document.getElementById("popup-boasvindas").style.display = "none";
-};
-document.getElementById("popup-nao").onclick = () => {
-  alert("Tudo bem, volte quando quiser! 😊");
-  document.getElementById("popup-boasvindas").style.display = "none";
-};
