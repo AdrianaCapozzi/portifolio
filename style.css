@@ -136,16 +136,28 @@ section {
   margin-bottom: 6px;
   position: relative;
 }
+
+/* Heart list (marcador personalizado) */
+.heart-list {
+  list-style: none;          /* remove marcador padrão */
+  padding-left: 0;           /* retira o recuo */
+}
+
+.heart-list li {
+  position: relative;
+  padding-left: 28px;        /* espaço para o ícone */
+  margin-bottom: 10px;       /* espaçamento entre itens */
+}
+
 .heart-list li::before {
   content: "";
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
   background: url("img/heart.png") no-repeat center center;
   background-size: contain;
-  position: absolute;
-  left: -1.5em;
-  top: 0.2em;
 }
 
 /* Faixa vermelha */
