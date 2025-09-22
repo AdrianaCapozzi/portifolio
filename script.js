@@ -29,16 +29,19 @@ function aplicarHoverZoom(selector) {
 }
 aplicarHoverZoom("#minha-foto, .navbar button, .navbar a");
 
-// ===== Dark mode =====
+// ===== Dark mode (botão de trocar tema) =====
 const botaoTema = document.getElementById("botao-tema");
-botaoTema.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-});
+if (botaoTema) {
+  botaoTema.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+}
 
 // ===== Slideshow Congressos =====
 let slideIndex = 0;
 function mostrarSlides() {
   const slides = document.querySelectorAll(".slide-congresso");
+  if (!slides.length) return;
   slides.forEach(s => (s.style.display = "none"));
   slideIndex++;
   if (slideIndex > slides.length) slideIndex = 1;
@@ -51,14 +54,19 @@ mostrarSlides();
 let projetoIndex = 0;
 function mostrarProjetos(n) {
   const projetos = document.querySelectorAll(".projeto");
+  if (!projetos.length) return;
   projetos.forEach(p => (p.style.display = "none"));
   projetoIndex += n;
   if (projetoIndex >= projetos.length) projetoIndex = 0;
   if (projetoIndex < 0) projetoIndex = projetos.length - 1;
   projetos[projetoIndex].style.display = "block";
 }
-document.getElementById("seta-esq").addEventListener("click", () => mostrarProjetos(-1));
-document.getElementById("seta-dir").addEventListener("click", () => mostrarProjetos(1));
+const setaEsq = document.getElementById("seta-esq");
+const setaDir = document.getElementById("seta-dir");
+if (setaEsq && setaDir) {
+  setaEsq.addEventListener("click", () => mostrarProjetos(-1));
+  setaDir.addEventListener("click", () => mostrarProjetos(1));
+}
 mostrarProjetos(0);
 
 // ===== Tooltips =====
@@ -66,7 +74,7 @@ function aplicarTooltip(selector, texto) {
   const elemento = document.querySelector(selector);
   if (elemento) elemento.setAttribute("title", texto);
 }
-aplicarTooltip("#minha-foto", "Hello, uorld!);
+aplicarTooltip("#minha-foto", "Hello, world!"); // <-- ASPAS CORRIGIDAS
 aplicarTooltip("#youtube-link", "Assista");
 aplicarTooltip("#linkedin-link", "LinkedIn");
 aplicarTooltip("#github-link", "GitHub");
@@ -85,7 +93,7 @@ if (botaoQuiz) {
   });
 }
 
-// ===== Popup de boas-vindas =====
+// ===== Popup de boas-vindas (1 min depois) =====
 window.addEventListener("load", () => {
   const popup = document.getElementById("popup-boasvindas");
   const mensagem = document.getElementById("mensagem-saudacao");
@@ -94,7 +102,11 @@ window.addEventListener("load", () => {
 
   if (popup && mensagem && botaoSim && botaoNao) {
     mensagem.textContent = saudacaoHorario();
-    popup.style.display = "flex";
+
+    // Exibe só depois de 1 minuto
+    setTimeout(() => {
+      popup.style.display = "flex";
+    }, 60000);
 
     botaoSim.addEventListener("click", () => {
       alert("Que bom que você gostou! Se quiser, me mande um e-mail com a sua opinião 😊");
@@ -102,15 +114,9 @@ window.addEventListener("load", () => {
     });
 
     botaoNao.addEventListener("click", () => {
-      alert("Poxa, vou melhorar então. Se quiser, me mande um e-mail com a sua opinião e, se tiver, sugestão de melhoria 🙏");
+      alert("Poxa, vou melhorar então! Se quiser, me mande um e-mail com sua sugestão 🙏");
       popup.style.display = "none";
     });
-    window.addEventListener("load", () => {
-  setTimeout(() => {
-    const popup = document.getElementById("popup-boasvindas");
-    popup.style.display = "flex";
-  }, 60000); // 60.000 ms = 1 minuto
-});
-
   }
 });
+
