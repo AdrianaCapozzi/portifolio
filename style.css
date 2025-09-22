@@ -282,3 +282,17 @@ body.dark-mode #botao-tema:hover {
 .contato-links a:hover {
   transform: scale(1.2);
 }
+.carrossel-controles button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.carrossel-controles img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.carrossel-controles img:hover {
+  transform: scale(1.1);
+}
+
