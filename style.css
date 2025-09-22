@@ -93,16 +93,6 @@ body {
   transform: translateX(-50%); /* centraliza em relação ao ponto */
 }
 
-
-
-
-
-
-
-
-
-
-
 /* === Sections === */
 section {
   padding: 4em 2em;
@@ -314,5 +304,11 @@ body.dark-mode #botao-tema:hover {
 }
 .carrossel-controles img:hover {
   transform: scale(1.1);
+}
+.icon-text {
+  width: 20px;         /* ajuste do tamanho do ícone */
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;   /* espaço entre ícone e texto */
 }
 
