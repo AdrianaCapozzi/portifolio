@@ -77,11 +77,33 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
-.icone-certificado {
+/*.icone-certificado {
   width: 1.2em;
   height: 1.2em;
   vertical-align: middle;
+}*/
+
+
+
+
+.icone-certificado {
+  position: absolute;
+  top: 40px;       /* ajuste para subir/descer */
+  left: 50%;       /* ou use right se for canto direito */
+  width: 32px;     /* tamanho do ícone */
+  height: auto;
+  transform: translateX(-50%); /* centraliza em relação ao ponto */
 }
+
+
+
+
+
+
+
+
+
+
 
 /* === Sections === */
 section {
