@@ -66,7 +66,7 @@ function aplicarTooltip(selector, texto) {
   const elemento = document.querySelector(selector);
   if (elemento) elemento.setAttribute("title", texto);
 }
-aplicarTooltip("#minha-foto", "Since 1985");
+aplicarTooltip("#minha-foto", "Adriana Capozzi");
 aplicarTooltip("#youtube-link", "Assista");
 aplicarTooltip("#linkedin-link", "LinkedIn");
 aplicarTooltip("#github-link", "GitHub");
