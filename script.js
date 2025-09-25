@@ -114,7 +114,7 @@ window.addEventListener("load", () => {
     });
 
     botaoNao.addEventListener("click", () => {
-      alert("Poxa, vou melhorar então! Se quiser, me mande um e-mail com sua sugestão 🙏");
+      alert("Poxa, vou melhorar então! Se quiser, me mande um e-mail com algum sugestão 🙏");
       popup.style.display = "none";
     });
   }
