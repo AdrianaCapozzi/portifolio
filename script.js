@@ -74,7 +74,7 @@ function aplicarTooltip(selector, texto) {
   const elemento = document.querySelector(selector);
   if (elemento) elemento.setAttribute("title", texto);
 }
-aplicarTooltip("#minha-foto", "Hello, world!"); // <-- ASPAS CORRIGIDAS
+aplicarTooltip("#minha-foto", "Hello, world!"); 
 aplicarTooltip("#youtube-link", "Assista");
 aplicarTooltip("#linkedin-link", "LinkedIn");
 aplicarTooltip("#github-link", "GitHub");
