@@ -109,12 +109,12 @@ window.addEventListener("load", () => {
     }, 60000);
 
     botaoSim.addEventListener("click", () => {
-      alert("Que bom que você gostou! Se quiser, me mande um e-mail com a sua opinião 😊");
+      alert("Que bom que você gostou! Se quiser, me conte sua opinião. Meus contatos estão na seção Contatoa 😊");
       popup.style.display = "none";
     });
 
     botaoNao.addEventListener("click", () => {
-      alert("Poxa, vou melhorar então! Se quiser, me mande um e-mail com algum sugestão 🙏");
+      alert("Poxa, vou melhorar então! Se quiser, me mande um e-mail com alguma sugestão 🙏");
       popup.style.display = "none";
     });
   }
