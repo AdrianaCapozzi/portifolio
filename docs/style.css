@@ -116,7 +116,7 @@ section {
 
 /* === Icons in Titles === */
 .faixa-vermelha h2 img {
-  width: 2.2em;
+  width: 32px;
   height: auto;
   margin-right: 0.5rem;
   vertical-align: middle;
@@ -125,7 +125,7 @@ section {
 
 /* === YouTube Icon & Links === */
 .icon-youtube {
-  width: 2.8em;
+  width: 32px;
   height: auto;
   margin-right: 0.5rem;
 }
