@@ -12,6 +12,11 @@ body {
   scroll-behavior: smooth;
 }
 
+/* === General Icons === */
+.icon {
+  height: auto;
+}
+
 /* === Navbar === */
 .navbar {
   position: fixed;
@@ -112,7 +117,7 @@ section {
 /* === Icons in Titles === */
 .faixa-vermelha h2 img {
   width: 1.9em;
-  height: 1.9em;
+  height: auto;
   margin-right: 0.4rem;
   vertical-align: middle;
 }
@@ -306,8 +311,8 @@ body.dark-mode #botao-tema:hover {
   transform: scale(1.1);
 }
 .icon-text {
-  width: 20px;         /* ajuste do tamanho do ícone */
-  height: 20px;
+  width: 28px;         /* ajuste do tamanho do ícone */
+  height: auto;
   vertical-align: middle;
   margin-right: 6px;   /* espaço entre ícone e texto */
 }
