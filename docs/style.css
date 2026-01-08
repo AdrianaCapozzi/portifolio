@@ -116,10 +116,11 @@ section {
 
 /* === Icons in Titles === */
 .faixa-vermelha h2 img {
-  width: 1.9em;
+  width: 2.2em;
   height: auto;
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
   vertical-align: middle;
+  object-fit: contain;
 }
 
 /* === YouTube Icon & Links === */
@@ -311,8 +312,9 @@ body.dark-mode #botao-tema:hover {
   transform: scale(1.1);
 }
 .icon-text {
-  width: 28px;         /* ajuste do tamanho do ícone */
+  width: 32px;         /* tamanho maior para visibilidade */
   height: auto;
   vertical-align: middle;
-  margin-right: 6px;   /* espaço entre ícone e texto */
+  margin-right: 8px;   /* espaço ajustado */
+  object-fit: contain; /* evita distorção se necessário */
 }
