@@ -1,0 +1,313 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* === Navbar === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #c4170c;
+  padding: 1em;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* === Hero Section === */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4em;
+}
+.perfil {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+#minha-foto {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #c4170c;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.sobre {
+  background-color: #c4170c;
+  color: rgb(249, 229, 229);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.nome-destaque {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/*.icone-certificado {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}*/
+
+
+.icone-certificado {
+  position: absolute;
+  top: 40px;       /* ajuste para subir/descer */
+  left: 50%;       /* ou use right se for canto direito */
+  width: 32px;     /* tamanho do ícone */
+  height: auto;
+  transform: translateX(-50%); /* centraliza em relação ao ponto */
+}
+
+/* === Sections === */
+section {
+  padding: 4em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === Projetos === */
+.projeto {
+  background-color: #c4170c;
+  color: #fff;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 12px;
+}
+
+/* === Icons in Titles === */
+.faixa-vermelha h2 img {
+  width: 1.9em;
+  height: 1.9em;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+/* === YouTube Icon & Links === */
+.icon-youtube {
+  width: 2.8em;
+  height: auto;
+  margin-right: 0.5rem;
+}
+.video-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+.video-link a:hover {
+  text-decoration: underline;
+}
+
+/* === Custom Lists === */
+.lista-destaques {
+  list-style: none;
+  padding-left: 1.8em;
+  margin: 10px 0;
+}
+.lista-destaques li {
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.heart-list {
+  list-style: none;
+  padding-left: 0;
+}
+.heart-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+.heart-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 22px;
+  height: 20px;
+  background: url("./img/heart.png") no-repeat center center;
+  background-size: contain;
+}
+
+/* === Red Banner (Faixa Vermelha) === */
+.faixa-vermelha {
+  background-color: #c4170c;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.faixa-vermelha h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* === Experiência & Formação === */
+.experiencia-item,
+#formacao p {
+  margin-bottom: 15px;
+}
+
+/* === Links YouTube extra === */
+.links-youtube a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+.links-youtube a:hover {
+  text-decoration: underline;
+}
+
+/* === Contato === */
+.contato-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* === Botão de Trocar Tema === */
+#botao-tema {
+  background: #d50303;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 10px auto;
+  display: block;
+}
+#botao-tema:hover {
+  background: #d50303;
+}
+
+/* === Popup de Boas-vindas === */
+#popup-boasvindas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#popup-boasvindas .popup-conteudo {
+  background: #fee7c4;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+#popup-boasvindas h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #333;
+}
+#popup-boasvindas button {
+  background: #bd0000;
+  color: #fee7c4;
+  border: none;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+#popup-boasvindas button:hover {
+  background: #d50303;
+}
+
+/* === Dark Mode === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode article {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode #botao-tema {
+  background: #333;
+  color: #e0e0e0;
+}
+body.dark-mode #botao-tema:hover {
+  background: #444;
+}
+.contato-links a {
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+.contato-links a:hover {
+  transform: scale(1.2);
+}
+.carrossel-controles button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.carrossel-controles img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.carrossel-controles img:hover {
+  transform: scale(1.1);
+}
+.icon-text {
+  width: 20px;         /* ajuste do tamanho do ícone */
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;   /* espaço entre ícone e texto */
+}

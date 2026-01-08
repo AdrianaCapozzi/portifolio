@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projetos - Adriana Capozzi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Portfolio">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" href="./img/heart.png">
+    <link rel="apple-touch-icon" href="./icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./formacao.html">Formação</a></li>
+        <li><a href="./projetos.html">Projetos</a></li>
+        <li><a href="./experiencia.html">Experiência</a></li>
+        <li><a href="./voluntariado.html">Voluntariado</a></li>
+        <li><a href="./congressos.html">Congressos</a></li>
+        <li><a href="./carreira.html">Transição de Carreira</a></li>
+        <li><a href="./ead.html">Ensino a Distância</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+        <div class="nav-actions">
+        <button id="botao-tema" aria-pressed="false" aria-label="Trocar tema">Trocar tema</button>
+      </div>
+    </nav>
+
+    <section class="faixa-vermelha">
+      <h2><img src="./img/star.png" alt="Estrela" class="icon icon-title">Projetos</h2>
+      <h3 class="intro-projetos">Projetos desenvolvidos no Projeto Integrador, disciplina da grade curricular da graduação dos cursos do eixo da computação da UNIVESP. Oito alunos desenvolvem uma aplicação em forma de protótipo de acordo com a necessidade de uma população pesquisada.</h3>
+
+      <div class="carrossel-controles">
+    <button id="seta-esq">
+      <img src="./img/seta-esq.png" alt="Anterior">
+    </button>
+    <button id="seta-dir">
+      <img src="./img/seta-dir.png" alt="Próximo">
+    </button>
+    </div>
+
+      <article class="projeto">
+        <h3>Análise de dados para prevenção de enchentes</h3>
+        <p><strong>Período:</strong> Agosto 2025 - Dezembro 2025 | EM ANDAMENTO</p>
+        <p>Coleta de dados por meio de sensores IoT</p>
+        <p><strong>Tecnologias:</strong> Databricks, Python, Matplotlib, MySQL, GitHub Actions, HTML/CSS/JS</p>
+      </article>
+
+      <article class="projeto">
+    <h3>Portal da Zeladoria - Análise de Dados e CI</h3>
+    <p><strong>Período:</strong> Fevereiro 2025 - Junho 2025</p>
+    <p>
+      Desenvolvimento do Portal da Zeladoria, solução web construída em equipe com foco em coleta,
+      modelagem e visualização de dados para apoio à gestão pública. O projeto evoluiu a partir de
+      versões anteriores e, nesta etapa, teve como objetivo central ampliar a capacidade de análise
+      estratégica por meio de ferramentas de BI. O projeto utiliza Flask (Python) para o backend, seguindo
+      o padrão RESTful e retornando dados em formato JSON, e frontend com HTML, CSS e JavaScript,
+      com foco em acessibilidade – incluindo integração com a API VLibras. A visualização dos dados foi
+      realizada com Power BI, permitindo a geração de dashboards dinâmicos para auxiliar decisões da gestão municipal.
+    </p>
+
+    <p><strong>Contribuições:</strong></p>
+
+    <ul class="heart-list">
+      <li>Elaboração do relatório técnico do projeto, com fundamentação metodológica baseada em Engenharia de Software e SCRUM.</li>
+      <li>Criação da base de dados fictícia utilizada no Power BI, alinhada aos dados manipulados pela API.</li>
+      <li>Implementação da integração contínua (CI) com GitHub Actions, desenvolvendo os arquivos <code>.yml</code> para validação automatizada de código HTML e JS.</li>
+      <li>Configuração e acompanhamento da pipeline de desenvolvimento, garantindo que os commits e pull requests fossem automaticamente verificados e organizados.</li>
+      <li>Apoio aos demais integrantes com suas tarefas técnicas e conceituais, garantindo coesão entre as etapas de frontend, backend e análise de dados.</li>
+    </ul>
+    </article>
+
+      <article class="projeto">
+        <h3>Conecta São Vicente - Portal da Zeladoria</h3>
+        <p><strong>Período:</strong> Julho 2024 - Novembro 2024</p>
+        <p>Protótipo de um software web desenvolvido para o setor de agendamento de serviços de
+        zeladoria urbana da prefeitura da cidade de São Vicente, em São Paulo , na disciplina
+        Projeto Integrador II do Eixo de Computação da UNIVESP.</p>
+         <p><strong>Contribuições:</strong></p>
+
+    <ul class="heart-list">
+        <li>Construção dos dashboards e plataforma para visualização dos dados para que fosse
+        possível a partir daí o setor da prefeitura tomar decisões condizentes às necessidades da
+        população;</li>
+        <li> Auxílio na comunicaçãocom a comunidade externa e confecção do plano de atividades utilizando SCRUM;</li>
+        <li>Construção dos relatórios.</li>
+    </ul>
+      </article>
+
+      <article class="projeto">
+        <h3>Sistema ERP para Pequenos Produtores Rurais</h3>
+        <p><strong>Período:</strong> Fevereiro 2024 - Maio 2024</p>
+        <p>
+          Desenvolvimento de uma aplcação web que auxiliou a organização dos produtos
+          comercializado por um coletivo de produtores da área rural de Períbe.
+        </p>
+
+        <p><strong>Contribuições:</strong></p>
+        <ul class="heart-list">
+          <li>Time dev back e front-end;</li>
+          <li>Relacionamento com os produtores;</li>
+          <li>Elaboração dos relatórios, levatamento bibliográfico;</li>
+          <li>Produção do vídeo.</li>
+        </ul>
+      </article>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

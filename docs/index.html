@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Portfólio - Adriana Capozzi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Portfolio">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" href="./img/heart.png">
+    <link rel="apple-touch-icon" href="./icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./formacao.html">Formação</a></li>
+        <li><a href="./projetos.html">Projetos</a></li>
+        <li><a href="./experiencia.html">Experiência</a></li>
+        <li><a href="./voluntariado.html">Voluntariado</a></li>
+        <li><a href="./congressos.html">Congressos</a></li>
+        <li><a href="./carreira.html">Transição de Carreira</a></li>
+        <li><a href="./ead.html">Ensino a Distância</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+        <div class="nav-actions">
+        <button id="botao-tema" aria-pressed="false" aria-label="Trocar tema">Trocar tema</button>
+      </div>
+    </nav>
+
+    <!-- Popup (inicialmente escondido) -->
+    <div id="popup-boasvindas" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="mensagem-saudacao">
+      <div class="popup-conteudo">
+        <h2 id="mensagem-saudacao">Bem-vinda (o) ao meu site!</h2>
+        <p>Está gostando de navegar pelo meu site?</p>
+        <button id="popup-sim">Sim</button>
+        <button id="popup-nao">Não</button>
+      </div>
+    </div>
+
+    <header class="hero" id="sobre">
+      <div class="perfil">
+        <div class="foto-container">
+          <img src="./img/foto3x4.png" alt="Foto de perfil" id="minha-foto">
+        </div>
+        <div class="sobre">
+          <p class="nome-destaque">Adriana Capozzi</p>
+          <img src="./img/certific.png" alt="Certificado" class="icone-certificado">
+          <p><img src="./img/trofeu.png" alt="Troféu" class="icon-text"> Bacharela em Tecnologia da Informação com ênfase em desenvolvimento de software e IoT</p>
+          <p><img src="./img/loading.png" alt="Loading" class="icon-text"> Graduanda em Engenharia de Computação</p>
+          <p><img src="./img/loading.png" alt="Loading" class="icon-text"> Pós-Graduanda em Administração de Banco de Dados</p>
+          <p><img src="./img/rainbow.png"  alt="Pause"  class="icon-text"> Curiosa em Desenvolvimento Web</p>
+          <p><img src="./img/heart.png"  alt="Pause" class="icon-text"> Paulistana, mãe, ouvinte de indie rock e samba, dayly learning e solucionadora de problemas</p>
+        </div>
+      </div>
+    </header>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
